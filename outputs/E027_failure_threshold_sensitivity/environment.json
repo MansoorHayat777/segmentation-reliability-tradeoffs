@@ -1,0 +1,9 @@
+﻿{
+    "python":  "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]",
+    "numpy":  "2.4.3",
+    "scipy":  "1.17.1",
+    "torch":  "2.7.0+cu128",
+    "cuda_available":  true,
+    "cuda_build":  "12.8",
+    "cuda_device":  "NVIDIA GeForce RTX 5090"
+}

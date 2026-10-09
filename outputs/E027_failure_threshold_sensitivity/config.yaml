@@ -1,0 +1,77 @@
+run:
+  name: five_panel_reviewer_robustness_suite
+  seed: 2044
+sources:
+  development_config: configs/khizar_v2_development.yaml
+  additional_panels:
+  - id: ADE20K-SegFormer-panel
+    path: outputs/E017_ade20k_confirmation
+    expected_stage: untouched_ade20k_confirmation
+    expected_sample_count: 2000
+    expected_model_count: 6
+    metrics_sha256: 0b44ccf054df3b216da2dfbd872e849da22ad69c0ffe02d7d84a342434808b8c
+    per_image_sha256: 5365b8a9511da3c9675ba8af886f3452feaff756aa9faecb32a89fc815724f52
+  - id: ADE20K-architecture-holdout
+    path: outputs/E019_architecture_holdout
+    expected_stage: ade20k_architecture_holdout
+    expected_sample_count: 2000
+    expected_model_count: 6
+    metrics_sha256: 076f1ac76f74ace887f880b4bad2da905fc8a77fc6d18868271e8fb1a4055642
+    per_image_sha256: 6b0bc8a3ca2b9142ad3e267e5ac3ae360b2b923efe3f0f1b0654514c2a5d23be
+  - id: Cityscapes-structured-driving
+    path: outputs/E023_cityscapes_confirmation
+    expected_stage: untouched_cityscapes_confirmation
+    expected_sample_count: 500
+    expected_model_count: 6
+    metrics_sha256: 018917dfb40fd6e4aaed37f4a32aaedefcb015cdf7ac52b0b2fc28fa9eb84cf0
+    per_image_sha256: 4ea3a16130aa58e584c58a4731572fbe998d4501d109bef9517a9ced778398d4
+profile:
+  head_definitions: outputs/E014_profile_development/head_definitions.json
+  head_definitions_sha256: 836637e1a8b49ab7ae6b2ecd73986875aa0e1eade5d51c760fa52b9e4a738d25
+ranking:
+  bootstrap_samples: 5000
+  confidence: 0.95
+  model_subset_sizes:
+  - 3
+  - 4
+  - 5
+  methods:
+  - mixed_head
+  - routed_policy_spearman
+  - routed_operational_spearman
+  - routed_severe_miss_auroc
+  - khizar_v1
+  - cvar_quality
+  - severity_arithmetic
+thresholds:
+  bootstrap_samples: 3000
+  confidence: 0.95
+  grid:
+  - 0.1
+  - 0.15
+  - 0.2
+  - 0.25
+  - 0.3
+  - 0.4
+  - 0.5
+routing:
+  high_false_positive_threshold: 0.25
+  false_positive_power: 1.0
+  bootstrap_samples: 5000
+  meta_bootstrap_samples: 20000
+  confidence: 0.95
+  familywise_alpha: 0.05
+gate:
+  expected_panels: 5
+  expected_models: 6
+  minimum_threshold_cells: 30
+claim_boundaries:
+  ranking: E026 quantifies uncertainty and subset volatility for the already observed
+    six-model panels. It does not convert model resampling into evidence about unseen
+    architectures.
+  thresholds: E027 is a post-confirmation sensitivity analysis over a predeclared
+    grid. It tests dependence on the failure definition and does not tune or select
+    a replacement metric formula.
+  routing: E028 synthesizes frozen endpoint-head comparisons over five existing panels.
+    Panel-bootstrap intervals describe this evidence set and are not a claim of universal
+    performance on arbitrary future datasets.

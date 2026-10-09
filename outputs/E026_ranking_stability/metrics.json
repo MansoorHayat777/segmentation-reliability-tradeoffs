@@ -1,0 +1,2425 @@
+{
+  "checks": {
+    "all_locked_panels_loaded": true,
+    "all_panels_use_six_models": true,
+    "all_requested_methods_analyzed": true
+  },
+  "claim_boundary": "E026 quantifies uncertainty and subset volatility for the already observed six-model panels. It does not convert model resampling into evidence about unseen architectures.",
+  "figures": [
+    "rank_stability.png"
+  ],
+  "panels": {
+    "ADE20K-SegFormer-panel": {
+      "operational": {
+        "cvar_quality": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8857142857142857,
+            "estimate": 0.942857142857143,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.6342,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.5,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.7999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.8999999999999998,
+              "minimum": 0.8999999999999998,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "khizar_v1": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8857142857142857,
+            "estimate": 0.942857142857143,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.7034,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.5,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.7999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.8999999999999998,
+              "minimum": 0.8999999999999998,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "mixed_head": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8857142857142857,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.6798,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_operational_spearman": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8857142857142857,
+            "estimate": 0.942857142857143,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.6956,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.5,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.7999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.8999999999999998,
+              "minimum": 0.8999999999999998,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_policy_spearman": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8857142857142857,
+            "estimate": 0.942857142857143,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.6254,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.5,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.7999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.8999999999999998,
+              "minimum": 0.8999999999999998,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_severe_miss_auroc": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8857142857142857,
+            "estimate": 0.942857142857143,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.646,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.5,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.7999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.8999999999999998,
+              "minimum": 0.8999999999999998,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "severity_arithmetic": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8857142857142857,
+            "estimate": 0.942857142857143,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.3372,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.5,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.7999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.8999999999999998,
+              "minimum": 0.8999999999999998,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        }
+      },
+      "policy": {
+        "cvar_quality": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8857142857142857,
+            "estimate": 0.942857142857143,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.703,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.5,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.7999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.8999999999999998,
+              "minimum": 0.8999999999999998,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "khizar_v1": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8857142857142857,
+            "estimate": 0.942857142857143,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.7346,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.5,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.7999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.8999999999999998,
+              "minimum": 0.8999999999999998,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "mixed_head": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8857142857142857,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.6138,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_operational_spearman": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8857142857142857,
+            "estimate": 0.942857142857143,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.7372,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.5,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.7999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.8999999999999998,
+              "minimum": 0.8999999999999998,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_policy_spearman": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8857142857142857,
+            "estimate": 0.942857142857143,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.6934,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.5,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.7999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.8999999999999998,
+              "minimum": 0.8999999999999998,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_severe_miss_auroc": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8857142857142857,
+            "estimate": 0.942857142857143,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.705,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.5,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.7999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.8999999999999998,
+              "minimum": 0.8999999999999998,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "severity_arithmetic": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8857142857142857,
+            "estimate": 0.942857142857143,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.4438,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.5,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.7999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.8999999999999998,
+              "minimum": 0.8999999999999998,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        }
+      }
+    },
+    "ADE20K-architecture-holdout": {
+      "operational": {
+        "cvar_quality": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8857142857142857,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.5442,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "khizar_v1": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8285714285714286,
+            "estimate": 0.8857142857142858,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.6122,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.5,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 0.7999999999999999,
+              "minimum": 0.6000000000000001,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.8999999999999998,
+              "median": 0.8999999999999998,
+              "minimum": 0.7999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "mixed_head": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8857142857142857,
+            "estimate": 0.942857142857143,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.676,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.5,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.7999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.8999999999999998,
+              "minimum": 0.8999999999999998,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_operational_spearman": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8285714285714286,
+            "estimate": 0.8857142857142858,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.6538,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.5,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 0.7999999999999999,
+              "minimum": 0.6000000000000001,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.8999999999999998,
+              "median": 0.8999999999999998,
+              "minimum": 0.7999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_policy_spearman": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8857142857142857,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.546,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_severe_miss_auroc": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8857142857142857,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.5414,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "severity_arithmetic": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8857142857142857,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.506,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        }
+      },
+      "policy": {
+        "cvar_quality": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8857142857142857,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.6556,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "khizar_v1": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.7714285714285715,
+            "estimate": 0.8857142857142858,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.4988,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.5,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 0.7999999999999999,
+              "minimum": 0.6000000000000001,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.8999999999999998,
+              "median": 0.8999999999999998,
+              "minimum": 0.7999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "mixed_head": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8285714285714286,
+            "estimate": 0.942857142857143,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.623,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.5,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.7999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.8999999999999998,
+              "minimum": 0.8999999999999998,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_operational_spearman": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8285714285714286,
+            "estimate": 0.8857142857142858,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.5496,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.5,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 0.7999999999999999,
+              "minimum": 0.6000000000000001,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.8999999999999998,
+              "median": 0.8999999999999998,
+              "minimum": 0.7999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_policy_spearman": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8857142857142857,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.6562,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_severe_miss_auroc": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8857142857142857,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.6584,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "severity_arithmetic": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8857142857142857,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.6314,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        }
+      }
+    },
+    "COCO-val2017": {
+      "operational": {
+        "cvar_quality": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 1.0,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.9998,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "khizar_v1": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 1.0,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.9998,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "mixed_head": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 0.9428571428571428,
+            "ci_low": 0.9428571428571428,
+            "estimate": 0.942857142857143,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.9998,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.5,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.7999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.8999999999999998,
+              "minimum": 0.8999999999999998,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_operational_spearman": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 1.0,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.9994,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_policy_spearman": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 1.0,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.9998,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_severe_miss_auroc": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 1.0,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.9996,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "severity_arithmetic": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 1.0,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        }
+      },
+      "policy": {
+        "cvar_quality": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 1.0,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.9996,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "khizar_v1": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 1.0,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.9994,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "mixed_head": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 0.9428571428571428,
+            "ci_low": 0.9428571428571428,
+            "estimate": 0.942857142857143,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.9994,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.5,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.7999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.8999999999999998,
+              "minimum": 0.8999999999999998,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_operational_spearman": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 1.0,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.9994,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_policy_spearman": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 1.0,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.9994,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_severe_miss_auroc": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 1.0,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.9996,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "severity_arithmetic": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 1.0,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        }
+      }
+    },
+    "Cityscapes-structured-driving": {
+      "operational": {
+        "cvar_quality": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8285714285714286,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "khizar_v1": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8285714285714286,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "mixed_head": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8285714285714286,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_operational_spearman": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8285714285714286,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_policy_spearman": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8285714285714286,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_severe_miss_auroc": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8285714285714286,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "severity_arithmetic": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8285714285714286,
+            "estimate": 0.942857142857143,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.5,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.7999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.8999999999999998,
+              "minimum": 0.8999999999999998,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        }
+      },
+      "policy": {
+        "cvar_quality": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8285714285714286,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "khizar_v1": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8285714285714286,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "mixed_head": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8285714285714286,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_operational_spearman": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8285714285714286,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_policy_spearman": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8285714285714286,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_severe_miss_auroc": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8285714285714286,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "severity_arithmetic": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.8285714285714286,
+            "estimate": 0.942857142857143,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.5,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 0.7999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.8999999999999998,
+              "minimum": 0.8999999999999998,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        }
+      }
+    },
+    "PASCAL-VOC-2012-val": {
+      "operational": {
+        "cvar_quality": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.9428571428571428,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "khizar_v1": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 1.0,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "mixed_head": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.9428571428571428,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.9998,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_operational_spearman": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 1.0,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_policy_spearman": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.9428571428571428,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_severe_miss_auroc": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.9428571428571428,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "severity_arithmetic": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 1.0,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        }
+      },
+      "policy": {
+        "cvar_quality": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.9428571428571428,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "khizar_v1": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.9428571428571428,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "mixed_head": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.9428571428571428,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 0.9998,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_operational_spearman": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.9428571428571428,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_policy_spearman": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.9428571428571428,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "routed_severe_miss_auroc": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 1.0,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        },
+        "severity_arithmetic": {
+          "bootstrap": {
+            "bootstrap_samples": 5000,
+            "ci_high": 1.0,
+            "ci_low": 0.9428571428571428,
+            "estimate": 1.0,
+            "probability_positive": 1.0,
+            "top_model_agreement_rate": 1.0,
+            "valid_bootstrap_samples": 5000
+          },
+          "model_subsets": {
+            "3": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 20
+            },
+            "4": {
+              "maximum": 1.0,
+              "median": 1.0,
+              "minimum": 1.0,
+              "nonnegative_fraction": 1.0,
+              "subsets": 15
+            },
+            "5": {
+              "maximum": 0.9999999999999999,
+              "median": 0.9999999999999999,
+              "minimum": 0.9999999999999999,
+              "nonnegative_fraction": 1.0,
+              "subsets": 6
+            }
+          }
+        }
+      }
+    }
+  },
+  "stage": "model_panel_ranking_stability_audit",
+  "status": "PASS"
+}

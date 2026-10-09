@@ -1,0 +1,42 @@
+% Camera-ready/author version. Keep main.tex anonymous for peer review.
+% The CVPR 2027 author kit should replace the currently bundled CVPR 2026 kit
+% when it becomes available.
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+\usepackage{cvpr}
+\input{preamble}
+
+\definecolor{cvprblue}{rgb}{0.21,0.49,0.74}
+\usepackage[breaklinks,colorlinks,allcolors=cvprblue]{hyperref}
+
+\def\paperID{*****}
+\def\confName{CVPR}
+\def\confYear{2027}
+
+\title{Criterion Conflict in Segmentation Reliability Evaluation:\\
+Empirical Bounds and Endpoint-Specific Scoring}
+
+\author{Mansoor Hayat\\
+Section of Neurosurgery, Department of Surgery\\
+Rady Faculty of Health Sciences, University of Manitoba\\
+Winnipeg, Canada\\
+\href{https://github.com/MansoorHayat777/segmentation-reliability-tradeoffs}{Code and derived results}}
+
+\begin{document}
+\maketitle
+
+\input{sections/0_abstract}
+\input{sections/1_introduction}
+\input{sections/2_related_work}
+\input{sections/3_method}
+\input{sections/4_experiments}
+\input{sections/5_results}
+\input{sections/6_limitations}
+\input{sections/7_conclusion}
+
+{\small
+\bibliographystyle{ieeenat_fullname}
+\bibliography{main}
+}
+
+\end{document}

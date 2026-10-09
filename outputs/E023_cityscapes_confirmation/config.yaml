@@ -1,0 +1,83 @@
+run:
+  name: untouched_cityscapes_structured_domain_confirmation
+  seed: 2041
+  device: cuda
+  mixed_precision: true
+dataset:
+  name: Cityscapes-fine-validation-19
+  root: data/cityscapes
+  image_archive_path: data/cityscapes/leftImg8bit_trainvaltest.zip
+  label_archive_path: data/cityscapes/gtFine_trainvaltest.zip
+  image_archive_md5: 0a6e97e94b616a514066c9e2adb0c97f
+  label_archive_md5: 4237c19de34c8a376e9ba46b495d6f66
+  image_directory: leftImg8bit/val
+  annotation_directory: gtFine/val
+  expected_images: 500
+  class_count: 19
+models:
+- id: segformer_b0_cityscapes1024
+  repository: nvidia/segformer-b0-finetuned-cityscapes-1024-1024
+  revision: 21b3847fae21ddee674abd31129307b6a1235bd9
+- id: segformer_b1_cityscapes1024
+  repository: nvidia/segformer-b1-finetuned-cityscapes-1024-1024
+  revision: ec86afeba68e656629ccf47e0c8d2902f964917b
+- id: segformer_b2_cityscapes1024
+  repository: nvidia/segformer-b2-finetuned-cityscapes-1024-1024
+  revision: d633b2072669ca68d8f8e309de9b52bfdbf6bf72
+- id: segformer_b3_cityscapes1024
+  repository: nvidia/segformer-b3-finetuned-cityscapes-1024-1024
+  revision: 7fd6d07f04d2511d4efd22e0fd99c004555433b6
+- id: segformer_b4_cityscapes1024
+  repository: nvidia/segformer-b4-finetuned-cityscapes-1024-1024
+  revision: 9c9bb743f6c9e271a1d2a606296eafa9e2abddba
+- id: segformer_b5_cityscapes1024
+  repository: nvidia/segformer-b5-finetuned-cityscapes-1024-1024
+  revision: 2c6f153e4c23c229e2fa2b188eb250607e030cd8
+policy:
+  default_severity: 1.0
+  severity_by_class_id:
+    11: 5.0
+    12: 5.0
+    17: 5.0
+    18: 5.0
+    13: 4.0
+    14: 4.0
+    15: 4.0
+    16: 4.0
+    0: 3.0
+    1: 3.0
+    6: 3.0
+    7: 3.0
+    3: 2.0
+    4: 2.0
+    5: 2.0
+  critical_severity_threshold: 4.0
+  miss_coverage_threshold: 0.5
+  minimum_component_pixels: 16
+metric:
+  severity_power: 2.0
+  support_floor: 1.0e-06
+  false_positive_power: 1.0
+  budget_overrun_rate: 2.0
+analysis:
+  cvar_tail_fraction: 0.25
+  boundary_width_pixels: 2
+  high_false_positive_threshold: 0.25
+  false_positive_power: 1.0
+  bootstrap_samples: 5000
+  confidence: 0.95
+  familywise_alpha: 0.05
+  conflict_references:
+  - policy
+  - operational
+  - fp_quality
+  - foreground_iou
+  - boundary_iou
+  - khizar_v1
+  - cvar_quality
+frozen_profile:
+  head_definitions_path: outputs/E014_profile_development/head_definitions.json
+  head_definitions_sha256: 836637e1a8b49ab7ae6b2ecd73986875aa0e1eade5d51c760fa52b9e4a738d25
+gate:
+  minimum_models: 6
+  noninferiority_margin: 0.01

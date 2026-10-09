@@ -1,0 +1,1074 @@
+{
+  "analyzable_critical_classes": 7,
+  "checks": {
+    "complete_cross_model_groups": true,
+    "derived_critical_presence_matches_e023": true,
+    "expected_label_images_loaded": true,
+    "expected_models_loaded": true,
+    "expected_rows_loaded": true,
+    "expected_source_images_loaded": true,
+    "frozen_profile_verified": true,
+    "locked_e023_source_verified": true,
+    "minimum_analyzable_critical_classes": true,
+    "official_label_archive_verified": true
+  },
+  "claim_boundary": "E025 is a post-Cityscapes exploratory concentration audit. Presence of a class defines a scene stratum; because E023 retained image-level severe-miss labels rather than per-class predictions, no severe miss is attributed to a specific class and no metric formula is selected or retuned from these results.",
+  "class_results": {
+    "bicycle": {
+      "aurocs": {
+        "cvar_quality": 0.9903088614655232,
+        "khizar_v1": 0.9633735387761742,
+        "mixed_head": 0.755839085268075,
+        "routed_severe_head": 0.9902391410444119,
+        "severity_arithmetic": 0.9864277580236585
+      },
+      "class_id": 18,
+      "class_name": "bicycle",
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.755839085268075,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.9902391410444119,
+          "ci_high": 0.4296090253756276,
+          "ci_low": 0.015192961165048568,
+          "cluster_count": 345,
+          "estimate": 0.23440005577633694,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.755839085268075,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.9864277580236585,
+          "ci_high": 0.4282980109977053,
+          "ci_low": 0.0165797267381316,
+          "cluster_count": 345,
+          "estimate": 0.23058867275558348,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        }
+      },
+      "images": 345,
+      "mean_pixel_share_when_present": 0.010097350617968437,
+      "model_image_rows": 2070,
+      "name": "bicycle",
+      "negative_rows": 21,
+      "positive_rows": 2049,
+      "safety_critical": true,
+      "severe_miss_prevalence": 0.9898550724637681
+    },
+    "building": {
+      "aurocs": {
+        "cvar_quality": 0.844087452885319,
+        "khizar_v1": 0.848147980703702,
+        "mixed_head": 0.7666979787780909,
+        "routed_severe_head": 0.8456463606786858,
+        "severity_arithmetic": 0.8905633333500778
+      },
+      "class_id": 2,
+      "class_name": "building",
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.7666979787780909,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8456463606786858,
+          "ci_high": 0.168633894590049,
+          "ci_low": -0.013188425190183753,
+          "cluster_count": 491,
+          "estimate": 0.07894838190059494,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.7666979787780909,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8905633333500778,
+          "ci_high": 0.1990158728484341,
+          "ci_low": 0.0608381478263969,
+          "cluster_count": 491,
+          "estimate": 0.12386535457198689,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        }
+      },
+      "images": 491,
+      "mean_pixel_share_when_present": 0.22831776504484916,
+      "model_image_rows": 2946,
+      "name": "building",
+      "negative_rows": 219,
+      "positive_rows": 2727,
+      "safety_critical": false,
+      "severe_miss_prevalence": 0.9256619144602851
+    },
+    "bus": {
+      "aurocs": {
+        "cvar_quality": 1.0,
+        "khizar_v1": 1.0,
+        "mixed_head": 0.9955456570155902,
+        "routed_severe_head": 1.0,
+        "severity_arithmetic": 1.0
+      },
+      "class_id": 15,
+      "class_name": "bus",
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.9955456570155902,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 1.0,
+          "ci_high": 0.011160714285714302,
+          "ci_low": 0.0,
+          "cluster_count": 75,
+          "estimate": 0.0044543429844098315,
+          "supported": true,
+          "valid_bootstrap_samples": 1295
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.9955456570155902,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 1.0,
+          "ci_high": 0.01115636434139359,
+          "ci_low": 0.0,
+          "cluster_count": 75,
+          "estimate": 0.0044543429844098315,
+          "supported": true,
+          "valid_bootstrap_samples": 1248
+        }
+      },
+      "images": 75,
+      "mean_pixel_share_when_present": 0.025377489365035834,
+      "model_image_rows": 450,
+      "name": "bus",
+      "negative_rows": 1,
+      "positive_rows": 449,
+      "safety_critical": true,
+      "severe_miss_prevalence": 0.9977777777777778
+    },
+    "car": {
+      "aurocs": {
+        "cvar_quality": 0.8811624520465984,
+        "khizar_v1": 0.8463753387533876,
+        "mixed_head": 0.7723115299334812,
+        "routed_severe_head": 0.8823601872382361,
+        "severity_arithmetic": 0.9036070636680392
+      },
+      "class_id": 13,
+      "class_name": "car",
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.7723115299334812,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8823601872382361,
+          "ci_high": 0.19702288277013583,
+          "ci_low": 0.03343323499401455,
+          "cluster_count": 479,
+          "estimate": 0.11004865730475488,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.7723115299334812,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.9036070636680392,
+          "ci_high": 0.21327402598553896,
+          "ci_low": 0.05954975379884195,
+          "cluster_count": 479,
+          "estimate": 0.13129553373455805,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        }
+      },
+      "images": 479,
+      "mean_pixel_share_when_present": 0.06784269617785789,
+      "model_image_rows": 2874,
+      "name": "car",
+      "negative_rows": 168,
+      "positive_rows": 2706,
+      "safety_critical": true,
+      "severe_miss_prevalence": 0.941544885177453
+    },
+    "fence": {
+      "aurocs": {
+        "cvar_quality": 0.928311080417434,
+        "khizar_v1": 0.8477209944751382,
+        "mixed_head": 0.7728859729895642,
+        "routed_severe_head": 0.9294620933087784,
+        "severity_arithmetic": 0.911487108655617
+      },
+      "class_id": 4,
+      "class_name": "fence",
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.7728859729895642,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.9294620933087784,
+          "ci_high": 0.29047084049543725,
+          "ci_low": 0.04902680777993071,
+          "cluster_count": 189,
+          "estimate": 0.1565761203192142,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.7728859729895642,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.911487108655617,
+          "ci_high": 0.26950768213798965,
+          "ci_low": 0.023629333394800004,
+          "cluster_count": 189,
+          "estimate": 0.1386011356660528,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        }
+      },
+      "images": 189,
+      "mean_pixel_share_when_present": 0.02193517860789725,
+      "model_image_rows": 1134,
+      "name": "fence",
+      "negative_rows": 48,
+      "positive_rows": 1086,
+      "safety_critical": false,
+      "severe_miss_prevalence": 0.9576719576719577
+    },
+    "motorcycle": {
+      "aurocs": {
+        "cvar_quality": null,
+        "khizar_v1": null,
+        "mixed_head": null,
+        "routed_severe_head": null,
+        "severity_arithmetic": null
+      },
+      "class_id": 17,
+      "class_name": "motorcycle",
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": null,
+          "candidate_auroc": null,
+          "reason": "subset does not contain both severe-miss outcomes",
+          "supported": false,
+          "valid_bootstrap_samples": 0
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": null,
+          "candidate_auroc": null,
+          "reason": "subset does not contain both severe-miss outcomes",
+          "supported": false,
+          "valid_bootstrap_samples": 0
+        }
+      },
+      "images": 93,
+      "mean_pixel_share_when_present": 0.004306146960362411,
+      "model_image_rows": 558,
+      "name": "motorcycle",
+      "negative_rows": 0,
+      "positive_rows": 558,
+      "safety_critical": true,
+      "severe_miss_prevalence": 1.0
+    },
+    "person": {
+      "aurocs": {
+        "cvar_quality": 0.955141573165717,
+        "khizar_v1": 0.8636477119191682,
+        "mixed_head": 0.7287640251424543,
+        "routed_severe_head": 0.9543044704223698,
+        "severity_arithmetic": 0.9134700111613699
+      },
+      "class_id": 11,
+      "class_name": "person",
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.7287640251424543,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.9543044704223698,
+          "ci_high": 0.3604376367826668,
+          "ci_low": 0.11071213047651782,
+          "cluster_count": 401,
+          "estimate": 0.22554044527991546,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.7287640251424543,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.9134700111613699,
+          "ci_high": 0.29813077333682764,
+          "ci_low": 0.08978156393140575,
+          "cluster_count": 401,
+          "estimate": 0.18470598601891564,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        }
+      },
+      "images": 401,
+      "mean_pixel_share_when_present": 0.01638650852372027,
+      "model_image_rows": 2406,
+      "name": "person",
+      "negative_rows": 58,
+      "positive_rows": 2348,
+      "safety_critical": true,
+      "severe_miss_prevalence": 0.9758935993349959
+    },
+    "pole": {
+      "aurocs": {
+        "cvar_quality": 0.8224798021060276,
+        "khizar_v1": 0.8225762527233116,
+        "mixed_head": 0.736177302711208,
+        "routed_severe_head": 0.8239927529653837,
+        "severity_arithmetic": 0.8761025629387558
+      },
+      "class_id": 5,
+      "class_name": "pole",
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.736177302711208,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8239927529653837,
+          "ci_high": 0.18548858118609102,
+          "ci_low": -0.010869869521630346,
+          "cluster_count": 491,
+          "estimate": 0.0878154502541757,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.736177302711208,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8761025629387558,
+          "ci_high": 0.21395390746746576,
+          "ci_low": 0.074221400044163,
+          "cluster_count": 491,
+          "estimate": 0.1399252602275478,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        }
+      },
+      "images": 491,
+      "mean_pixel_share_when_present": 0.015227418094638498,
+      "model_image_rows": 2946,
+      "name": "pole",
+      "negative_rows": 192,
+      "positive_rows": 2754,
+      "safety_critical": false,
+      "severe_miss_prevalence": 0.9348268839103869
+    },
+    "rider": {
+      "aurocs": {
+        "cvar_quality": 0.9995272761652643,
+        "khizar_v1": 0.9982981941949514,
+        "mixed_head": 0.7465254798146923,
+        "routed_severe_head": 0.99933818663137,
+        "severity_arithmetic": 0.9989600075635814
+      },
+      "class_id": 12,
+      "class_name": "rider",
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.7465254798146923,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.99933818663137,
+          "ci_high": 0.6903337739590217,
+          "ci_low": 0.0,
+          "cluster_count": 253,
+          "estimate": 0.25281270681667767,
+          "supported": true,
+          "valid_bootstrap_samples": 1990
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.7465254798146923,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.9989600075635814,
+          "ci_high": 0.6982215494012106,
+          "ci_low": 0.0,
+          "cluster_count": 253,
+          "estimate": 0.2524345277488891,
+          "supported": true,
+          "valid_bootstrap_samples": 1989
+        }
+      },
+      "images": 253,
+      "mean_pixel_share_when_present": 0.0042056867459099425,
+      "model_image_rows": 1518,
+      "name": "rider",
+      "negative_rows": 7,
+      "positive_rows": 1511,
+      "safety_critical": true,
+      "severe_miss_prevalence": 0.9953886693017128
+    },
+    "road": {
+      "aurocs": {
+        "cvar_quality": 0.8583419421487604,
+        "khizar_v1": 0.8377432684617435,
+        "mixed_head": 0.7617531158357771,
+        "routed_severe_head": 0.8593895794454812,
+        "severity_arithmetic": 0.8986249500133298
+      },
+      "class_id": 0,
+      "class_name": "road",
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.7617531158357771,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8593895794454812,
+          "ci_high": 0.1951380832510556,
+          "ci_low": 0.00388330200039816,
+          "cluster_count": 484,
+          "estimate": 0.09763646360970413,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.7617531158357771,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8986249500133298,
+          "ci_high": 0.20979455867420616,
+          "ci_low": 0.07069383746707107,
+          "cluster_count": 484,
+          "estimate": 0.13687183417755266,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        }
+      },
+      "images": 484,
+      "mean_pixel_share_when_present": 0.38432657274656146,
+      "model_image_rows": 2904,
+      "name": "road",
+      "negative_rows": 176,
+      "positive_rows": 2728,
+      "safety_critical": false,
+      "severe_miss_prevalence": 0.9393939393939394
+    },
+    "sidewalk": {
+      "aurocs": {
+        "cvar_quality": 0.8354356365792529,
+        "khizar_v1": 0.8176033468484667,
+        "mixed_head": 0.7577432929892419,
+        "routed_severe_head": 0.8363250549709978,
+        "severity_arithmetic": 0.8832775616759497
+      },
+      "class_id": 1,
+      "class_name": "sidewalk",
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.7577432929892419,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8363250549709978,
+          "ci_high": 0.1946300649625063,
+          "ci_low": -0.033840873495486486,
+          "cluster_count": 466,
+          "estimate": 0.07858176198175593,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.7577432929892419,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8832775616759497,
+          "ci_high": 0.21455236118269755,
+          "ci_low": 0.05398193425602982,
+          "cluster_count": 466,
+          "estimate": 0.1255342686867078,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        }
+      },
+      "images": 466,
+      "mean_pixel_share_when_present": 0.057251301154448,
+      "model_image_rows": 2796,
+      "name": "sidewalk",
+      "negative_rows": 137,
+      "positive_rows": 2659,
+      "safety_critical": false,
+      "severe_miss_prevalence": 0.9510014306151645
+    },
+    "sky": {
+      "aurocs": {
+        "cvar_quality": 0.8102678980088768,
+        "khizar_v1": 0.8003410514532611,
+        "mixed_head": 0.7419438363580726,
+        "routed_severe_head": 0.8115664566480186,
+        "severity_arithmetic": 0.8591567345892606
+      },
+      "class_id": 10,
+      "class_name": "sky",
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.7419438363580726,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8115664566480186,
+          "ci_high": 0.17547385968718215,
+          "ci_low": -0.04029998863913116,
+          "cluster_count": 442,
+          "estimate": 0.06962262028994604,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.7419438363580726,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8591567345892606,
+          "ci_high": 0.19624364587603035,
+          "ci_low": 0.0474449568494126,
+          "cluster_count": 442,
+          "estimate": 0.11721289823118797,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        }
+      },
+      "images": 442,
+      "mean_pixel_share_when_present": 0.0373147950740769,
+      "model_image_rows": 2652,
+      "name": "sky",
+      "negative_rows": 153,
+      "positive_rows": 2499,
+      "safety_critical": false,
+      "severe_miss_prevalence": 0.9423076923076923
+    },
+    "terrain": {
+      "aurocs": {
+        "cvar_quality": 0.7872164536378419,
+        "khizar_v1": 0.7772599678412776,
+        "mixed_head": 0.7263510751369471,
+        "routed_severe_head": 0.7891332588413775,
+        "severity_arithmetic": 0.8625805103607409
+      },
+      "class_id": 9,
+      "class_name": "terrain",
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.7263510751369471,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.7891332588413775,
+          "ci_high": 0.22019567455734268,
+          "ci_low": -0.0767533580342612,
+          "cluster_count": 240,
+          "estimate": 0.06278218370443045,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.7263510751369471,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8625805103607409,
+          "ci_high": 0.27460934670491244,
+          "ci_low": 0.014336011517183334,
+          "cluster_count": 240,
+          "estimate": 0.13622943522379383,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        }
+      },
+      "images": 240,
+      "mean_pixel_share_when_present": 0.01711460859261189,
+      "model_image_rows": 1440,
+      "name": "terrain",
+      "negative_rows": 81,
+      "positive_rows": 1359,
+      "safety_critical": false,
+      "severe_miss_prevalence": 0.94375
+    },
+    "traffic_light": {
+      "aurocs": {
+        "cvar_quality": 0.8355482440454903,
+        "khizar_v1": 0.831442672197983,
+        "mixed_head": 0.727644660610829,
+        "routed_severe_head": 0.8364494671339675,
+        "severity_arithmetic": 0.8791073599885559
+      },
+      "class_id": 6,
+      "class_name": "traffic_light",
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.727644660610829,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8364494671339675,
+          "ci_high": 0.28205955385624676,
+          "ci_low": -0.04405985155548121,
+          "cluster_count": 291,
+          "estimate": 0.10880480652313851,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.727644660610829,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8791073599885559,
+          "ci_high": 0.28534151223430565,
+          "ci_low": 0.029917267485231845,
+          "cluster_count": 291,
+          "estimate": 0.15146269937772694,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        }
+      },
+      "images": 291,
+      "mean_pixel_share_when_present": 0.0033868161929085264,
+      "model_image_rows": 1746,
+      "name": "traffic_light",
+      "negative_rows": 41,
+      "positive_rows": 1705,
+      "safety_critical": false,
+      "severe_miss_prevalence": 0.9765177548682703
+    },
+    "traffic_sign": {
+      "aurocs": {
+        "cvar_quality": 0.8160636866858924,
+        "khizar_v1": 0.8300389997483887,
+        "mixed_head": 0.758148334526874,
+        "routed_severe_head": 0.8183390752317727,
+        "severity_arithmetic": 0.8826765633770105
+      },
+      "class_id": 7,
+      "class_name": "traffic_sign",
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.758148334526874,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8183390752317727,
+          "ci_high": 0.1824557093598501,
+          "ci_low": -0.05976455084613913,
+          "cluster_count": 473,
+          "estimate": 0.060190740704898715,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.758148334526874,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8826765633770105,
+          "ci_high": 0.22166636915985427,
+          "ci_low": 0.040720104774649636,
+          "cluster_count": 473,
+          "estimate": 0.12452822885013648,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        }
+      },
+      "images": 473,
+      "mean_pixel_share_when_present": 0.007092892007222508,
+      "model_image_rows": 2838,
+      "name": "traffic_sign",
+      "negative_rows": 154,
+      "positive_rows": 2684,
+      "safety_critical": false,
+      "severe_miss_prevalence": 0.9457364341085271
+    },
+    "train": {
+      "aurocs": {
+        "cvar_quality": 0.9638242894056848,
+        "khizar_v1": 0.8733850129198967,
+        "mixed_head": 0.21188630490956073,
+        "routed_severe_head": 0.9509043927648578,
+        "severity_arithmetic": 0.8785529715762274
+      },
+      "class_id": 16,
+      "class_name": "train",
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.21188630490956073,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.9509043927648578,
+          "ci_high": 0.8320413436692506,
+          "ci_low": 0.6287262872628726,
+          "cluster_count": 22,
+          "estimate": 0.7390180878552971,
+          "supported": true,
+          "valid_bootstrap_samples": 1279
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.21188630490956073,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8785529715762274,
+          "ci_high": 0.7560077519379846,
+          "ci_low": 0.565891472868217,
+          "cluster_count": 22,
+          "estimate": 0.6666666666666666,
+          "supported": true,
+          "valid_bootstrap_samples": 1298
+        }
+      },
+      "images": 22,
+      "mean_pixel_share_when_present": 0.02646073325416931,
+      "model_image_rows": 132,
+      "name": "train",
+      "negative_rows": 3,
+      "positive_rows": 129,
+      "safety_critical": true,
+      "severe_miss_prevalence": 0.9772727272727273
+    },
+    "truck": {
+      "aurocs": {
+        "cvar_quality": 0.7865507579567498,
+        "khizar_v1": 0.8134205043465766,
+        "mixed_head": 0.765069329693225,
+        "routed_severe_head": 0.7888497736906387,
+        "severity_arithmetic": 0.8956821610747898
+      },
+      "class_id": 14,
+      "class_name": "truck",
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.765069329693225,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.7888497736906387,
+          "ci_high": 0.27621627538272586,
+          "ci_low": -0.18940759302416865,
+          "cluster_count": 80,
+          "estimate": 0.023780443997413636,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.765069329693225,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8956821610747898,
+          "ci_high": 0.3215962726408151,
+          "ci_low": -0.02154557091653858,
+          "cluster_count": 80,
+          "estimate": 0.13061283138156476,
+          "supported": true,
+          "valid_bootstrap_samples": 1998
+        }
+      },
+      "images": 80,
+      "mean_pixel_share_when_present": 0.01870581411868851,
+      "model_image_rows": 480,
+      "name": "truck",
+      "negative_rows": 31,
+      "positive_rows": 449,
+      "safety_critical": true,
+      "severe_miss_prevalence": 0.9354166666666667
+    },
+    "vegetation": {
+      "aurocs": {
+        "cvar_quality": 0.8602743112167587,
+        "khizar_v1": 0.84184693630501,
+        "mixed_head": 0.757855421972325,
+        "routed_severe_head": 0.8614848563345371,
+        "severity_arithmetic": 0.8867522344292577
+      },
+      "class_id": 8,
+      "class_name": "vegetation",
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.757855421972325,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8614848563345371,
+          "ci_high": 0.18124055787797622,
+          "ci_low": 0.029960989986626423,
+          "cluster_count": 486,
+          "estimate": 0.10362943436221206,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.757855421972325,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8867522344292577,
+          "ci_high": 0.2055993034941808,
+          "ci_low": 0.06447577663867528,
+          "cluster_count": 486,
+          "estimate": 0.12889681245693263,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        }
+      },
+      "images": 486,
+      "mean_pixel_share_when_present": 0.17815132081479548,
+      "model_image_rows": 2916,
+      "name": "vegetation",
+      "negative_rows": 219,
+      "positive_rows": 2697,
+      "safety_critical": false,
+      "severe_miss_prevalence": 0.9248971193415638
+    },
+    "wall": {
+      "aurocs": {
+        "cvar_quality": 0.819318683745583,
+        "khizar_v1": 0.8110092756183745,
+        "mixed_head": 0.7138471731448763,
+        "routed_severe_head": 0.8209363957597173,
+        "severity_arithmetic": 0.8509496466431096
+      },
+      "class_id": 3,
+      "class_name": "wall",
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.7138471731448763,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8209363957597173,
+          "ci_high": 0.24000834154090747,
+          "ci_low": -0.00846349912593585,
+          "cluster_count": 202,
+          "estimate": 0.107089222614841,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.7138471731448763,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8509496466431096,
+          "ci_high": 0.25606116808451884,
+          "ci_low": 0.04114073334951454,
+          "cluster_count": 202,
+          "estimate": 0.13710247349823323,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        }
+      },
+      "images": 202,
+      "mean_pixel_share_when_present": 0.020099244734363718,
+      "model_image_rows": 1212,
+      "name": "wall",
+      "negative_rows": 80,
+      "positive_rows": 1132,
+      "safety_critical": false,
+      "severe_miss_prevalence": 0.933993399339934
+    }
+  },
+  "figures": [
+    "safety_class_audit.png"
+  ],
+  "safety_strata": {
+    "all_images": {
+      "aurocs": {
+        "cvar_quality": 0.8391991420160434,
+        "khizar_v1": 0.8433522658874771,
+        "mixed_head": 0.7649861875213988,
+        "routed_severe_head": 0.8409024465362493,
+        "severity_arithmetic": 0.8886387477936774
+      },
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.7649861875213988,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8409024465362493,
+          "ci_high": 0.16225011310353218,
+          "ci_low": -0.012499190432931255,
+          "cluster_count": 500,
+          "estimate": 0.07591625901485055,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.7649861875213988,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8886387477936774,
+          "ci_high": 0.1910243076885189,
+          "ci_low": 0.06111196185400299,
+          "cluster_count": 500,
+          "estimate": 0.12365256027227856,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        }
+      },
+      "images": 500,
+      "model_image_rows": 3000,
+      "name": "all_images",
+      "negative_rows": 231,
+      "positive_rows": 2769,
+      "severe_miss_prevalence": 0.923
+    },
+    "both_vru_and_motor_vehicle": {
+      "aurocs": {
+        "cvar_quality": 0.9617268102505586,
+        "khizar_v1": 0.8907634941011064,
+        "mixed_head": 0.7274962473935517,
+        "routed_severe_head": 0.9616317215803737,
+        "severity_arithmetic": 0.9403454435546862
+      },
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.7274962473935517,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.9616317215803737,
+          "ci_high": 0.37119904026321704,
+          "ci_low": 0.11510983946249788,
+          "cluster_count": 440,
+          "estimate": 0.234135474186822,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.7274962473935517,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.9403454435546862,
+          "ci_high": 0.3358232253241244,
+          "ci_low": 0.09813669732882956,
+          "cluster_count": 440,
+          "estimate": 0.2128491961611345,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        }
+      },
+      "images": 440,
+      "model_image_rows": 2640,
+      "name": "both_vru_and_motor_vehicle",
+      "negative_rows": 57,
+      "positive_rows": 2583,
+      "severe_miss_prevalence": 0.9784090909090909
+    },
+    "motor_vehicle_present": {
+      "aurocs": {
+        "cvar_quality": 0.8838617391083707,
+        "khizar_v1": 0.8485617382625832,
+        "mixed_head": 0.7630695321949033,
+        "routed_severe_head": 0.8850405555132662,
+        "severity_arithmetic": 0.9058004110527518
+      },
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.7630695321949033,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8850405555132662,
+          "ci_high": 0.20751120631247483,
+          "ci_low": 0.045093936466348586,
+          "cluster_count": 482,
+          "estimate": 0.12197102331836296,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.7630695321949033,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.9058004110527518,
+          "ci_high": 0.22090717366868115,
+          "ci_low": 0.07445124856566329,
+          "cluster_count": 482,
+          "estimate": 0.14273087885784852,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        }
+      },
+      "images": 482,
+      "model_image_rows": 2892,
+      "name": "motor_vehicle_present",
+      "negative_rows": 174,
+      "positive_rows": 2718,
+      "severe_miss_prevalence": 0.9398340248962656
+    },
+    "motor_vehicle_without_vru": {
+      "aurocs": {
+        "cvar_quality": 0.8756885090218424,
+        "khizar_v1": 0.7855017410572966,
+        "mixed_head": 0.7069958847736626,
+        "routed_severe_head": 0.8755302310857866,
+        "severity_arithmetic": 0.8458372902817347
+      },
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.7069958847736626,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8755302310857866,
+          "ci_high": 0.2908644549771209,
+          "ci_low": 0.050371540280740514,
+          "cluster_count": 42,
+          "estimate": 0.16853434631212405,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.7069958847736626,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8458372902817347,
+          "ci_high": 0.258477087652553,
+          "ci_low": 0.030078819936052235,
+          "cluster_count": 42,
+          "estimate": 0.1388414055080721,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        }
+      },
+      "images": 42,
+      "model_image_rows": 252,
+      "name": "motor_vehicle_without_vru",
+      "negative_rows": 117,
+      "positive_rows": 135,
+      "severe_miss_prevalence": 0.5357142857142857
+    },
+    "no_vulnerable_road_user": {
+      "aurocs": {
+        "cvar_quality": 0.8088283251805264,
+        "khizar_v1": 0.7892382948986723,
+        "mixed_head": 0.7216398788725833,
+        "routed_severe_head": 0.8098765432098766,
+        "severity_arithmetic": 0.8320055904961565
+      },
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.7216398788725833,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8098765432098766,
+          "ci_high": 0.21764304711426882,
+          "ci_low": -0.0396407002389316,
+          "cluster_count": 49,
+          "estimate": 0.08823666433729327,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.7216398788725833,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.8320055904961565,
+          "ci_high": 0.21979222837227272,
+          "ci_low": 0.017580550488159236,
+          "cluster_count": 49,
+          "estimate": 0.11036571162357323,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        }
+      },
+      "images": 49,
+      "model_image_rows": 294,
+      "name": "no_vulnerable_road_user",
+      "negative_rows": 159,
+      "positive_rows": 135,
+      "severe_miss_prevalence": 0.45918367346938777
+    },
+    "vulnerable_road_user_present": {
+      "aurocs": {
+        "cvar_quality": 0.9603159537669789,
+        "khizar_v1": 0.8783957647852865,
+        "mixed_head": 0.7100153969459209,
+        "routed_severe_head": 0.9594881042773982,
+        "severity_arithmetic": 0.9246129671813043
+      },
+      "comparisons": {
+        "routed_severe_head_vs_mixed": {
+          "baseline_auroc": 0.7100153969459209,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.9594881042773982,
+          "ci_high": 0.3629964393522402,
+          "ci_low": 0.14434395356935825,
+          "cluster_count": 451,
+          "estimate": 0.2494727073314773,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        },
+        "severity_arithmetic_vs_mixed": {
+          "baseline_auroc": 0.7100153969459209,
+          "bootstrap_samples": 2000,
+          "candidate_auroc": 0.9246129671813043,
+          "ci_high": 0.32250173505413426,
+          "ci_low": 0.11927914920615956,
+          "cluster_count": 451,
+          "estimate": 0.2145975702353834,
+          "supported": true,
+          "valid_bootstrap_samples": 2000
+        }
+      },
+      "images": 451,
+      "model_image_rows": 2706,
+      "name": "vulnerable_road_user_present",
+      "negative_rows": 72,
+      "positive_rows": 2634,
+      "severe_miss_prevalence": 0.9733924611973392
+    }
+  },
+  "source": {
+    "images": 500,
+    "models": 6,
+    "rows": 3000,
+    "severe_miss_prevalence": 0.923
+  },
+  "stage": "exploratory_cityscapes_class_presence_safety_audit",
+  "status": "PASS"
+}

@@ -1,0 +1,58 @@
+run:
+  name: criterion_conflict_sensitivity_audit
+  seed: 2039
+sources:
+  development_config: configs/khizar_v2_development.yaml
+  additional_panels:
+  - id: ADE20K-SegFormer-panel
+    path: outputs/E017_ade20k_confirmation
+    expected_stage: untouched_ade20k_confirmation
+    expected_sample_count: 2000
+    expected_model_count: 6
+    metrics_sha256: 0b44ccf054df3b216da2dfbd872e849da22ad69c0ffe02d7d84a342434808b8c
+    per_image_sha256: 5365b8a9511da3c9675ba8af886f3452feaff756aa9faecb32a89fc815724f52
+  - id: ADE20K-architecture-holdout
+    path: outputs/E019_architecture_holdout
+    expected_stage: ade20k_architecture_holdout
+    expected_sample_count: 2000
+    expected_model_count: 6
+    metrics_sha256: 076f1ac76f74ace887f880b4bad2da905fc8a77fc6d18868271e8fb1a4055642
+    per_image_sha256: 6b0bc8a3ca2b9142ad3e267e5ac3ae360b2b923efe3f0f1b0654514c2a5d23be
+analysis:
+  references:
+  - policy
+  - operational
+  - fp_quality
+  - foreground_iou
+  - boundary_iou
+  - khizar_v1
+  - cvar_quality
+  criterion_subsets:
+    deployment:
+    - policy
+    - operational
+    - fp_quality
+    segmentation_quality:
+    - foreground_iou
+    - boundary_iou
+    - khizar_v1
+    - cvar_quality
+    conventional_plus_deployment:
+    - policy
+    - operational
+    - fp_quality
+    - foreground_iou
+    - boundary_iou
+  bootstrap_samples: 5000
+  confidence: 0.95
+  minimum_model_subset_size: 3
+  image_subsample_sizes:
+  - 100
+  - 250
+  - 500
+  - 1000
+  image_subsample_repetitions: 1000
+  split_half_samples: 1000
+gate:
+  expected_panels: 4
+  minimum_references: 7
