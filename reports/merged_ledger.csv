@@ -1,0 +1,471 @@
+macro,value,display,source
+OneImagesCoco,4031,"4,031",COCO-val2017 per_image.jsonl
+OneImagesVoc,1449,"1,449",PASCAL-VOC-2012-val per_image.jsonl
+OneImagesAdeS,2000,"2,000",ADE20K-SegFormer-panel per_image.jsonl
+OneImagesAdeX,2000,"2,000",ADE20K-architecture-holdout per_image.jsonl
+OneImagesAdeM,2000,"2,000",E034 per_image.jsonl
+OneRecordsTotal,68880,"68,880",sum of image x model records over the five reported panels
+OneRecordsLocked,56880,"56,880","four locked panels (exact regeneration, E030)"
+OneBCoco,0.15971000441202904,0.160,E021 panels/COCO-val2017/full_bound/estimate
+OneBLoCoco,0.15746021668874105,0.157,E021 panels/COCO-val2017/full_bound/ci_low
+OneBHiCoco,0.16199955358383533,0.162,E021 panels/COCO-val2017/full_bound/ci_high
+OneBExactCoco,0.1601648246899324,0.160,E029 panels/COCO-val2017/B_exact/estimate
+OneBGapCoco,0.00045482027790336025,0.0005,E029 panels/COCO-val2017/gap_B_exact_minus_B/estimate
+OneQcRateCoco,0.17536726056572016,0.175,E029 COCO-val2017 single:q_c tie_broken
+OneHmRateCoco,0.23548796496522123,0.235,E029 COCO-val2017 frozen:h_M tie_broken
+OneBVoc,0.14222821531396918,0.142,E021 panels/PASCAL-VOC-2012-val/full_bound/estimate
+OneBLoVoc,0.13850062536968763,0.139,E021 panels/PASCAL-VOC-2012-val/full_bound/ci_low
+OneBHiVoc,0.14605437284591044,0.146,E021 panels/PASCAL-VOC-2012-val/full_bound/ci_high
+OneBExactVoc,0.14253434891942127,0.143,E029 panels/PASCAL-VOC-2012-val/B_exact/estimate
+OneBGapVoc,0.0003061336054520937,0.0003,E029 panels/PASCAL-VOC-2012-val/gap_B_exact_minus_B/estimate
+OneQcRateVoc,0.15658005029337804,0.157,E029 PASCAL-VOC-2012-val single:q_c tie_broken
+OneHmRateVoc,0.20091111192098837,0.201,E029 PASCAL-VOC-2012-val frozen:h_M tie_broken
+OneBAdeS,0.16278674382434244,0.163,E021 panels/ADE20K-SegFormer-panel/full_bound/estimate
+OneBLoAdeS,0.1594133732281338,0.159,E021 panels/ADE20K-SegFormer-panel/full_bound/ci_low
+OneBHiAdeS,0.1662029825363133,0.166,E021 panels/ADE20K-SegFormer-panel/full_bound/ci_high
+OneBExactAdeS,0.16386350899508215,0.164,E029 panels/ADE20K-SegFormer-panel/B_exact/estimate
+OneBGapAdeS,0.0010767651707396936,0.0011,E029 panels/ADE20K-SegFormer-panel/gap_B_exact_minus_B/estimate
+OneQcRateAdeS,0.201159883885674,0.201,E029 ADE20K-SegFormer-panel single:q_c tie_broken
+OneHmRateAdeS,0.20317488303559622,0.203,E029 ADE20K-SegFormer-panel frozen:h_M tie_broken
+OneBAdeX,0.1862848200312989,0.186,E021 panels/ADE20K-architecture-holdout/full_bound/estimate
+OneBLoAdeX,0.18316597672625656,0.183,E021 panels/ADE20K-architecture-holdout/full_bound/ci_low
+OneBHiAdeX,0.189410046165416,0.189,E021 panels/ADE20K-architecture-holdout/full_bound/ci_high
+OneBExactAdeX,0.18745539906103287,0.187,E029 panels/ADE20K-architecture-holdout/B_exact/estimate
+OneBGapAdeX,0.0011705790297339594,0.0012,E029 panels/ADE20K-architecture-holdout/gap_B_exact_minus_B/estimate
+OneQcRateAdeX,0.22317370892018779,0.223,E029 ADE20K-architecture-holdout single:q_c tie_broken
+OneHmRateAdeX,0.23176838810641628,0.232,E029 ADE20K-architecture-holdout frozen:h_M tie_broken
+OneBAdeM,0.1855288829616458,0.186,E034 conflict_bound/estimate
+OneBLoAdeM,0.18247856268427412,0.182,E034 conflict_bound/ci_low
+OneBHiAdeM,0.1886370590739199,0.189,E034 conflict_bound/ci_high
+OneBExactAdeM,np.float64(0.1869366031957719),0.187,computed: E029 exact_minimum on E034 per_image.jsonl
+OneBGapAdeM,np.float64(0.001407720234126102),0.0014,computed: E029 exact_minimum on E034 per_image.jsonl
+OneQcRateAdeM,np.float64(0.21652959917018597),0.217,computed: E029 score_contradictions on E034 per_image.jsonl
+OneHmRateAdeM,np.float64(0.23074880837717024),0.231,computed: E029 score_contradictions on E034 per_image.jsonl
+OneBMin,0.14222821531396918,0.142,min over reported panels
+OneBMax,0.1862848200312989,0.186,max over reported panels
+OneBGapMin,0.0003061336054520937,0.0003,min E029/E034 gap over reported panels
+OneBGapMax,0.001407720234126102,0.0014,max gap over reported panels
+OneBDeployCoco,0.1334191214829757,0.133,E021 COCO-val2017 deployment
+OneBConvCoco,0.1629073255627562,0.163,E021 COCO-val2017 conventional_plus_deployment
+OneBDeployVoc,0.12015283160969158,0.120,E021 PASCAL-VOC-2012-val deployment
+OneBConvVoc,0.14475462887104704,0.145,E021 PASCAL-VOC-2012-val conventional_plus_deployment
+OneBDeployAdeS,0.059687049619106446,0.060,E021 ADE20K-SegFormer-panel deployment
+OneBConvAdeS,0.14573676337513158,0.146,E021 ADE20K-SegFormer-panel conventional_plus_deployment
+OneBDeployAdeX,0.06144979300267879,0.061,E021 ADE20K-architecture-holdout deployment
+OneBConvAdeX,0.1752061869856793,0.175,E021 ADE20K-architecture-holdout conventional_plus_deployment
+OneLooMinLow,0.11395299054885671,0.114,E021 min leave-one-criterion-out ci_low over four locked panels
+OneTieAgreeMin,0.12310476190476191,0.123,E021 tie agreement min
+OneTieSplitMax,0.26135238095238095,0.261,E021 tie split max
+OneSubsetMinAdeX,0.16876613969893556,0.169,E021 ADE-X 3-model min
+OneSubsetMaxAdeX,0.20171175972662006,0.202,E021 ADE-X 3-model max
+OneSubsetMinAdeM,0.1676745123577387,0.168,E034 3-model min
+OneSubsetMaxAdeM,0.2004552967224873,0.200,E034 3-model max
+OneSplitHalfMin,0.9844155844155844,0.984,E021 min split-half median
+OneMvBCoco,0.06818471001054793,+0.068,E032 mixed_vs_best_single_t025/COCO-val2017/vs_best/estimate
+OneMvBLoCoco,0.06052954497117196,+0.061,E032 COCO-val2017 vs_best ci_low (exact)
+OneMvBHiCoco,0.07608390445371703,+0.076,E032 COCO-val2017 vs_best ci_high (exact)
+OneMvBNameCoco,'the component aggregate',the component aggregate,E032 COCO-val2017 best_single
+OneMvBVoc,0.06667507372561154,+0.067,E032 mixed_vs_best_single_t025/PASCAL-VOC-2012-val/vs_best/estimate
+OneMvBLoVoc,0.05449762544024743,+0.054,E032 PASCAL-VOC-2012-val vs_best ci_low (exact)
+OneMvBHiVoc,0.07934446406951542,+0.079,E032 PASCAL-VOC-2012-val vs_best ci_high (exact)
+OneMvBNameVoc,'false-positive quality',false-positive quality,E032 PASCAL-VOC-2012-val best_single
+OneMvBAdeS,0.025630389486340888,+0.026,E032 mixed_vs_best_single_t025/ADE20K-SegFormer-panel/vs_best/estimate
+OneMvBLoAdeS,0.02074727147566566,+0.021,E032 ADE20K-SegFormer-panel vs_best ci_low (exact)
+OneMvBHiAdeS,0.03044870381704295,+0.030,E032 ADE20K-SegFormer-panel vs_best ci_high (exact)
+OneMvBNameAdeS,'false-positive quality',false-positive quality,E032 ADE20K-SegFormer-panel best_single
+OneMvBAdeX,0.027827291850064606,+0.028,E032 mixed_vs_best_single_t025/ADE20K-architecture-holdout/vs_best/estimate
+OneMvBLoAdeX,0.02320337779738998,+0.023,E032 ADE20K-architecture-holdout vs_best ci_low (exact)
+OneMvBHiAdeX,0.03288961186825946,+0.033,E032 ADE20K-architecture-holdout vs_best ci_high (exact)
+OneMvBNameAdeX,'false-positive quality',false-positive quality,E032 ADE20K-architecture-holdout best_single
+OneMvBAdeM,0.018095203606160792,+0.018,E034 mixed_vs_best_single_t025/estimate
+OneMvBLoAdeM,0.0036801228920487375,+0.004,E034 ci_low
+OneMvBHiAdeM,0.03297584893100085,+0.033,E034 ci_high
+OneMvBNameAdeM,'foreground IoU',foreground IoU,E034 best_single
+OneThrPosCoco,5,5,E027 COCO-val2017 positive threshold cells
+OneThrPosVoc,7,7,E027 PASCAL-VOC-2012-val positive threshold cells
+OneThrPosAdeS,4,4,E027 ADE20K-SegFormer-panel positive threshold cells
+OneThrPosAdeX,4,4,E027 ADE20K-architecture-holdout positive threshold cells
+OneThrCells,7,7,E027 grid size
+OneRPolCoco,0.5889300869217476,+0.589,E028 COCO-val2017 policy_spearman estimate
+OneRLoPolCoco,0.5707941952222476,+0.571,E028 COCO-val2017 policy_spearman ci_low
+OneRHiPolCoco,0.606862188199127,+0.607,E028 COCO-val2017 policy_spearman ci_high
+OneROpCoco,0.16111169516680854,+0.161,E028 COCO-val2017 operational_spearman estimate
+OneRLoOpCoco,0.14671259488408386,+0.147,E028 COCO-val2017 operational_spearman ci_low
+OneRHiOpCoco,0.17534934987579598,+0.175,E028 COCO-val2017 operational_spearman ci_high
+OneRSevCoco,0.1587267067448921,+0.159,E032 COCO-val2017 severe_miss_auroc (exact) estimate
+OneRLoSevCoco,0.147382591855337,+0.147,E032 COCO-val2017 severe_miss_auroc (exact) ci_low
+OneRHiSevCoco,0.17037258432697872,+0.170,E032 COCO-val2017 severe_miss_auroc (exact) ci_high
+OneRHiCoco,0.014194417648419999,+0.014,E032 COCO-val2017 false_positive_auroc (exact) estimate
+OneRLoHiCoco,0.012646424468334569,+0.013,E032 COCO-val2017 false_positive_auroc (exact) ci_low
+OneRHiHiCoco,0.01587441815291065,+0.016,E032 COCO-val2017 false_positive_auroc (exact) ci_high
+OneRPolVoc,0.42748631188494685,+0.427,E028 PASCAL-VOC-2012-val policy_spearman estimate
+OneRLoPolVoc,0.4026859592474541,+0.403,E028 PASCAL-VOC-2012-val policy_spearman ci_low
+OneRHiPolVoc,0.45366742851716707,+0.454,E028 PASCAL-VOC-2012-val policy_spearman ci_high
+OneROpVoc,0.1210036730433823,+0.121,E028 PASCAL-VOC-2012-val operational_spearman estimate
+OneRLoOpVoc,0.10441274950520774,+0.104,E028 PASCAL-VOC-2012-val operational_spearman ci_low
+OneRHiOpVoc,0.13779711388868018,+0.138,E028 PASCAL-VOC-2012-val operational_spearman ci_high
+OneRSevVoc,0.1888781520971261,+0.189,E032 PASCAL-VOC-2012-val severe_miss_auroc (exact) estimate
+OneRLoSevVoc,0.15995353327293202,+0.160,E032 PASCAL-VOC-2012-val severe_miss_auroc (exact) ci_low
+OneRHiSevVoc,0.2191352715046851,+0.219,E032 PASCAL-VOC-2012-val severe_miss_auroc (exact) ci_high
+OneRHiVoc,0.00741859804084577,+0.007,E032 PASCAL-VOC-2012-val false_positive_auroc (exact) estimate
+OneRLoHiVoc,0.005858190608303749,+0.006,E032 PASCAL-VOC-2012-val false_positive_auroc (exact) ci_low
+OneRHiHiVoc,0.009225313855146107,+0.009,E032 PASCAL-VOC-2012-val false_positive_auroc (exact) ci_high
+OneRPolAdeS,0.2578688389078507,+0.258,E028 ADE20K-SegFormer-panel policy_spearman estimate
+OneRLoPolAdeS,0.22599319746562974,+0.226,E028 ADE20K-SegFormer-panel policy_spearman ci_low
+OneRHiPolAdeS,0.290325967450883,+0.290,E028 ADE20K-SegFormer-panel policy_spearman ci_high
+OneROpAdeS,0.17533862486128798,+0.175,E028 ADE20K-SegFormer-panel operational_spearman estimate
+OneRLoOpAdeS,0.15045594475703641,+0.150,E028 ADE20K-SegFormer-panel operational_spearman ci_low
+OneRHiOpAdeS,0.2025317240158615,+0.203,E028 ADE20K-SegFormer-panel operational_spearman ci_high
+OneRSevAdeS,0.36523798078617553,+0.365,E032 ADE20K-SegFormer-panel severe_miss_auroc (exact) estimate
+OneRLoSevAdeS,0.32406153249969083,+0.324,E032 ADE20K-SegFormer-panel severe_miss_auroc (exact) ci_low
+OneRHiSevAdeS,0.4058158135142154,+0.406,E032 ADE20K-SegFormer-panel severe_miss_auroc (exact) ci_high
+OneRHiAdeS,0.00605044753235251,+0.006,E032 ADE20K-SegFormer-panel false_positive_auroc (exact) estimate
+OneRLoHiAdeS,0.0046619960793564345,+0.005,E032 ADE20K-SegFormer-panel false_positive_auroc (exact) ci_low
+OneRHiHiAdeS,0.0076019203690403355,+0.008,E032 ADE20K-SegFormer-panel false_positive_auroc (exact) ci_high
+OneRPolAdeX,0.24954271868748093,+0.250,E028 ADE20K-architecture-holdout policy_spearman estimate
+OneRLoPolAdeX,0.21766215914143408,+0.218,E028 ADE20K-architecture-holdout policy_spearman ci_low
+OneRHiPolAdeX,0.28043345518781215,+0.280,E028 ADE20K-architecture-holdout policy_spearman ci_high
+OneROpAdeX,0.1630953672070572,+0.163,E028 ADE20K-architecture-holdout operational_spearman estimate
+OneRLoOpAdeX,0.137698549357739,+0.138,E028 ADE20K-architecture-holdout operational_spearman ci_low
+OneRHiOpAdeX,0.1887664938356588,+0.189,E028 ADE20K-architecture-holdout operational_spearman ci_high
+OneRSevAdeX,0.3330237911210656,+0.333,E032 ADE20K-architecture-holdout severe_miss_auroc (exact) estimate
+OneRLoSevAdeX,0.2965725944727964,+0.297,E032 ADE20K-architecture-holdout severe_miss_auroc (exact) ci_low
+OneRHiSevAdeX,0.37225351472286416,+0.372,E032 ADE20K-architecture-holdout severe_miss_auroc (exact) ci_high
+OneRHiAdeX,0.005024010258285916,+0.005,E032 ADE20K-architecture-holdout false_positive_auroc (exact) estimate
+OneRLoHiAdeX,0.003740481013621272,+0.004,E032 ADE20K-architecture-holdout false_positive_auroc (exact) ci_low
+OneRHiHiAdeX,0.006435779510664721,+0.006,E032 ADE20K-architecture-holdout false_positive_auroc (exact) ci_high
+OneRPolAdeM,0.2074883803988986,+0.207,E034 policy_spearman estimate
+OneRLoPolAdeM,0.1802250020012672,+0.180,E034 policy_spearman ci_low
+OneRHiPolAdeM,0.23505540467675679,+0.235,E034 policy_spearman ci_high
+OneROpAdeM,0.1253140058776003,+0.125,E034 operational_spearman estimate
+OneRLoOpAdeM,0.1024835445059255,+0.102,E034 operational_spearman ci_low
+OneRHiOpAdeM,0.14864768384179766,+0.149,E034 operational_spearman ci_high
+OneRSevAdeM,0.31784868780299513,+0.318,E034 severe_miss_auroc estimate
+OneRLoSevAdeM,0.28105908510515076,+0.281,E034 severe_miss_auroc ci_low
+OneRHiSevAdeM,0.3557902030778707,+0.356,E034 severe_miss_auroc ci_high
+OneRHiAdeM,0.00556951220345725,+0.006,E034 false_positive_auroc estimate
+OneRLoHiAdeM,0.004053623699560296,+0.004,E034 false_positive_auroc ci_low
+OneRHiHiAdeM,0.007306459579774044,+0.007,E034 false_positive_auroc ci_high
+OneRoutingSig,20,20,recomputed Holm over the 25 reported tests
+OneRoutingMaxHolm,0.004999000199960008,0.0050,"max Holm p, 20 non-identity tests"
+OneRMeanPol,np.float64(0.346263267360185),0.346,equal-panel mean over 5 reported panels (policy_spearman)
+OneRMinPol,np.float64(0.2074883803988986),0.207,min over panels (policy_spearman)
+OneRMaxvPol,np.float64(0.5889300869217476),0.589,max over panels (policy_spearman)
+OneRLooPol,np.float64(0.28559656246979426),0.286,leave-one-panel-out min mean (policy_spearman)
+OneRMeanOp,np.float64(0.14917267323122727),0.149,equal-panel mean over 5 reported panels (operational_spearman)
+OneRMinOp,np.float64(0.1210036730433823),0.121,min over panels (operational_spearman)
+OneRMaxvOp,np.float64(0.17533862486128798),0.175,max over panels (operational_spearman)
+OneRLooOp,np.float64(0.14263118532371208),0.143,leave-one-panel-out min mean (operational_spearman)
+OneRMeanSev,np.float64(0.2727430637104509),0.273,equal-panel mean over 5 reported panels (severe_miss_auroc)
+OneRMinSev,np.float64(0.1587267067448921),0.159,min over panels (severe_miss_auroc)
+OneRMaxvSev,np.float64(0.36523798078617553),0.365,max over panels (severe_miss_auroc)
+OneRLooSev,np.float64(0.24961933444151974),0.250,leave-one-panel-out min mean (severe_miss_auroc)
+OneRMeanHi,np.float64(0.007651397136672289),0.008,equal-panel mean over 5 reported panels (false_positive_auroc)
+OneRMinHi,np.float64(0.005024010258285916),0.005,min over panels (false_positive_auroc)
+OneRMaxvHi,np.float64(0.014194417648419999),0.014,max over panels (false_positive_auroc)
+OneRLooHi,np.float64(0.006015642008735361),0.006,leave-one-panel-out min mean (false_positive_auroc)
+OneNestedHeldPos,6,6,E031 held-out nested ci_low>0
+OneNestedHeldN,6,6,E031 held-out non-trivial comparisons on reported panels
+OneNestedAllPos,12,12,E031 all nested ci_low>0
+OneNestedAllN,12,12,E031 non-trivial comparisons on reported locked panels
+OneNestedMinLow,0.13293827937411207,+0.133,E031 min held-out nested ci_low
+OneReselPol,0.711,0.711,E031 reselection policy_spearman
+OneReselOp,0.768,0.768,E031 reselection operational_spearman
+OneReselSev,0.735,0.735,E031 reselection severe_miss_auroc
+OneReselHi,1.0,1.000,E031 reselection false_positive_auroc
+OneReselMix,0.433,0.433,E031 reselection mixed_failure_auroc
+OneSingleSelMinCoco,0.09252833785624945,+0.093,E031 single-dataset selection on COCO-val2017: min estimate over reported panels
+OneSingleSelMinVoc,0.1242960782195916,+0.124,E031 single-dataset selection on PASCAL-VOC-2012-val: min estimate over reported panels
+OneExactLinMaxDiff,0.001917032784848005,0.0019,"E032 max |exact - linearized| CI endpoint, reported AUROC members"
+OneNullRateMin,0.025,0.025,E032 paired-exchange type-I min
+OneNullRateMax,0.06,0.060,E032 paired-exchange type-I max
+OnePrioUnifN,1,1,E030 uniform variants affecting reported panels
+OnePrioUnifPos,1.0,1.000,E030 uniform: fraction with all 12 differences > 0
+OnePrioUnifCi,1.0,1.000,E030 uniform: fraction with all 12 CIs excluding 0
+OnePrioSingleN,202,202,E030 single variants affecting reported panels
+OnePrioSinglePos,1.0,1.000,E030 single: fraction with all 12 differences > 0
+OnePrioSingleCi,1.0,1.000,E030 single: fraction with all 12 CIs excluding 0
+OnePrioPermN,100,100,E030 permutation variants affecting reported panels
+OnePrioPermPos,1.0,1.000,E030 permutation: fraction with all 12 differences > 0
+OnePrioPermCi,1.0,1.000,E030 permutation: fraction with all 12 CIs excluding 0
+OnePrioBMin,0.1395231256228384,0.140,E030 min B over variants and reported panels
+OnePrioWorstPol,0.0478008752971908,+0.048,E030 worst policy_spearman estimate
+OnePrioWorstLoPol,0.013315647507491249,+0.013,E030 worst policy_spearman ci_low
+OnePrioWorstOp,0.11152128148892583,+0.112,E030 worst operational_spearman estimate
+OnePrioWorstLoOp,0.0885118081255954,+0.089,E030 worst operational_spearman ci_low
+OnePrioWorstSev,0.051039317171648446,+0.051,E030 worst severe_miss_auroc estimate
+OnePrioWorstLoSev,0.011100375452155326,+0.011,E030 worst severe_miss_auroc ci_low
+OneHoneN,16,16,E033 H1 tests on reported panels
+OneHoneSig,5,5,E033 H1 Holm(16) significant improvements
+OneHoneSigPol,0,0,E033 H1 Holm(16) significant panels for policy_spearman
+OneHoneSigOp,0,0,E033 H1 Holm(16) significant panels for operational_spearman
+OneHoneSigSev,1,1,E033 H1 Holm(16) significant panels for severe_miss_auroc
+OneHoneSigHi,4,4,E033 H1 Holm(16) significant panels for false_positive_auroc
+OneHoneReg,-0.044950354941277984,$-$0.045,E033 h1_tests ADE-X operational estimate
+OneHoneRegLo,-0.08014673393292199,$-$0.080,E033 h1_tests ADE-X operational ci_low
+OneHoneRegHi,-0.007632485502894311,$-$0.008,E033 h1_tests ADE-X operational ci_high
+OneHtwoPairs,29,29,E033 H2 crossing pairs on reported panels
+OneHtwoSig,17,17,E033 H2 Holm significant pairs (reported panels)
+OneHtwoPanels,4,4,E033 H2 panels with >= 1 significant crossing
+OneSevWorstSeg,3,3,E033 severe-miss training winner = worst-segment entropy
+OneOracleGapPolMin,-0.6950070482070083,$-$0.695,E033 oracle gap policy min
+OneOracleGapPolMax,-0.5747239939676366,$-$0.575,E033 oracle gap policy max
+OneOracleGapSevMin,-0.3730874997283774,$-$0.373,E033 oracle gap severe min
+OneOracleGapSevMax,-0.20056171039337256,$-$0.201,E033 oracle gap severe max
+OneRankMin,0.942857142857143,0.943,E026 mixed_head policy aggregate Spearman min
+OneRankMax,1.0,1.000,E026 max
+OneRankLowMin,0.8285714285714286,0.829,E026 min ci_low
+OneTopAgreeMin,0.6138,0.614,E026 ADE top-model agreement min
+OneTopAgreeMax,0.623,0.623,E026 ADE top-model agreement max
+ImagesCoco,4031,"4,031",Coco per-image records
+SevOnlyCoco,17.257917803688084,17.3,Coco: share of records severe-only (%)
+HighOnlyCoco,16.906474820143885,16.9,Coco: share of records high-error-only (%)
+BothCoco,7.359629537749111,7.4,Coco: share of records both (%)
+FailCoco,41.52402216158108,41.5,Coco: mixed-failure prevalence (%)
+HighShareCoco,58.4387135318132,58.4,Coco: high-error share of failures (%)
+ErrMeanCoco,20.37839291738942,20.4,Coco: mean error rate r (%)
+BestWCoco,np.float64(0.3),0.3,Coco: AUROC-maximizing weight on q_c in w*q_c+(1-w)*q_g (descriptive)
+GPolCoco,0.5889300869217476,+0.589,E028 COCO-val2017 policy_spearman
+GLoPolCoco,0.5707941952222476,+0.571,ci_low
+GHiPolCoco,0.606862188199127,+0.607,ci_high
+GOpCoco,0.16111169516680854,+0.161,E028 COCO-val2017 operational_spearman
+GLoOpCoco,0.14671259488408386,+0.147,ci_low
+GHiOpCoco,0.17534934987579598,+0.175,ci_high
+GSevCoco,0.1587267067448921,+0.159,E032 COCO-val2017 severe_miss_auroc
+GLoSevCoco,0.147382591855337,+0.147,ci_low
+GHiSevCoco,0.17037258432697872,+0.170,ci_high
+MvbCoco,0.06818471001054793,+0.068,E032 mixed_vs_best_single_t025/COCO-val2017 estimate
+MvbLoCoco,0.06052954497117196,+0.061,E032 mixed_vs_best_single_t025/COCO-val2017 ci_low
+MvbHiCoco,0.07608390445371703,+0.076,E032 mixed_vs_best_single_t025/COCO-val2017 ci_high
+MvbNameCoco,'component aggregate',component aggregate,E032 mixed_vs_best_single_t025/COCO-val2017 best_single
+BCoco,0.15971000441202904,0.160,conflict bound
+BExactCoco,0.1601648246899324,0.160,exact scalar minimum
+ImagesVoc,1449,"1,449",Voc per-image records
+SevOnlyVoc,10.628019323671497,10.6,Voc: share of records severe-only (%)
+HighOnlyVoc,13.50356567747872,13.5,Voc: share of records high-error-only (%)
+BothVoc,3.32413158500115,3.3,Voc: share of records both (%)
+FailVoc,27.455716586151368,27.5,Voc: mixed-failure prevalence (%)
+HighShareVoc,61.29032258064516,61.3,Voc: high-error share of failures (%)
+ErrMeanVoc,13.276583710553854,13.3,Voc: mean error rate r (%)
+BestWVoc,np.float64(0.2),0.2,Voc: AUROC-maximizing weight on q_c in w*q_c+(1-w)*q_g (descriptive)
+GPolVoc,0.42748631188494685,+0.427,E028 PASCAL-VOC-2012-val policy_spearman
+GLoPolVoc,0.4026859592474541,+0.403,ci_low
+GHiPolVoc,0.45366742851716707,+0.454,ci_high
+GOpVoc,0.1210036730433823,+0.121,E028 PASCAL-VOC-2012-val operational_spearman
+GLoOpVoc,0.10441274950520774,+0.104,ci_low
+GHiOpVoc,0.13779711388868018,+0.138,ci_high
+GSevVoc,0.1888781520971261,+0.189,E032 PASCAL-VOC-2012-val severe_miss_auroc
+GLoSevVoc,0.15995353327293202,+0.160,ci_low
+GHiSevVoc,0.2191352715046851,+0.219,ci_high
+MvbVoc,0.06667507372561154,+0.067,E032 mixed_vs_best_single_t025/PASCAL-VOC-2012-val estimate
+MvbLoVoc,0.05449762544024743,+0.054,E032 mixed_vs_best_single_t025/PASCAL-VOC-2012-val ci_low
+MvbHiVoc,0.07934446406951542,+0.079,E032 mixed_vs_best_single_t025/PASCAL-VOC-2012-val ci_high
+MvbNameVoc,'false-positive quality',false-positive quality,E032 mixed_vs_best_single_t025/PASCAL-VOC-2012-val best_single
+BVoc,0.14222821531396918,0.142,conflict bound
+BExactVoc,0.14253434891942127,0.143,exact scalar minimum
+ImagesAdeS,2000,"2,000",AdeS per-image records
+SevOnlyAdeS,16.475,16.5,AdeS: share of records severe-only (%)
+HighOnlyAdeS,23.883333333333333,23.9,AdeS: share of records high-error-only (%)
+BothAdeS,4.383333333333334,4.4,AdeS: share of records both (%)
+FailAdeS,44.74166666666667,44.7,AdeS: mixed-failure prevalence (%)
+HighShareAdeS,63.17750046563606,63.2,AdeS: high-error share of failures (%)
+ErrMeanAdeS,20.034169690986342,20.0,AdeS: mean error rate r (%)
+BestWAdeS,np.float64(0.3),0.3,AdeS: AUROC-maximizing weight on q_c in w*q_c+(1-w)*q_g (descriptive)
+GPolAdeS,0.2578688389078507,+0.258,E028 ADE20K-SegFormer-panel policy_spearman
+GLoPolAdeS,0.22599319746562974,+0.226,ci_low
+GHiPolAdeS,0.290325967450883,+0.290,ci_high
+GOpAdeS,0.17533862486128798,+0.175,E028 ADE20K-SegFormer-panel operational_spearman
+GLoOpAdeS,0.15045594475703641,+0.150,ci_low
+GHiOpAdeS,0.2025317240158615,+0.203,ci_high
+GSevAdeS,0.36523798078617553,+0.365,E032 ADE20K-SegFormer-panel severe_miss_auroc
+GLoSevAdeS,0.32406153249969083,+0.324,ci_low
+GHiSevAdeS,0.4058158135142154,+0.406,ci_high
+MvbAdeS,0.025630389486340888,+0.026,E032 mixed_vs_best_single_t025/ADE20K-SegFormer-panel estimate
+MvbLoAdeS,0.02074727147566566,+0.021,E032 mixed_vs_best_single_t025/ADE20K-SegFormer-panel ci_low
+MvbHiAdeS,0.03044870381704295,+0.030,E032 mixed_vs_best_single_t025/ADE20K-SegFormer-panel ci_high
+MvbNameAdeS,'false-positive quality',false-positive quality,E032 mixed_vs_best_single_t025/ADE20K-SegFormer-panel best_single
+BAdeS,0.16278674382434244,0.163,conflict bound
+BExactAdeS,0.16386350899508215,0.164,exact scalar minimum
+ImagesAdeX,2000,"2,000",AdeX per-image records
+SevOnlyAdeX,15.916666666666668,15.9,AdeX: share of records severe-only (%)
+HighOnlyAdeX,22.21666666666667,22.2,AdeX: share of records high-error-only (%)
+BothAdeX,4.541666666666667,4.5,AdeX: share of records both (%)
+FailAdeX,42.675000000000004,42.7,AdeX: mixed-failure prevalence (%)
+HighShareAdeX,62.70259714899433,62.7,AdeX: high-error share of failures (%)
+ErrMeanAdeX,19.46895693135369,19.5,AdeX: mean error rate r (%)
+BestWAdeX,np.float64(0.3),0.3,AdeX: AUROC-maximizing weight on q_c in w*q_c+(1-w)*q_g (descriptive)
+GPolAdeX,0.24954271868748093,+0.250,E028 ADE20K-architecture-holdout policy_spearman
+GLoPolAdeX,0.21766215914143408,+0.218,ci_low
+GHiPolAdeX,0.28043345518781215,+0.280,ci_high
+GOpAdeX,0.1630953672070572,+0.163,E028 ADE20K-architecture-holdout operational_spearman
+GLoOpAdeX,0.137698549357739,+0.138,ci_low
+GHiOpAdeX,0.1887664938356588,+0.189,ci_high
+GSevAdeX,0.3330237911210656,+0.333,E032 ADE20K-architecture-holdout severe_miss_auroc
+GLoSevAdeX,0.2965725944727964,+0.297,ci_low
+GHiSevAdeX,0.37225351472286416,+0.372,ci_high
+MvbAdeX,0.027827291850064606,+0.028,E032 mixed_vs_best_single_t025/ADE20K-architecture-holdout estimate
+MvbLoAdeX,0.02320337779738998,+0.023,E032 mixed_vs_best_single_t025/ADE20K-architecture-holdout ci_low
+MvbHiAdeX,0.03288961186825946,+0.033,E032 mixed_vs_best_single_t025/ADE20K-architecture-holdout ci_high
+MvbNameAdeX,'false-positive quality',false-positive quality,E032 mixed_vs_best_single_t025/ADE20K-architecture-holdout best_single
+BAdeX,0.1862848200312989,0.186,conflict bound
+BExactAdeX,0.18745539906103287,0.187,exact scalar minimum
+ImagesAdeM,2000,"2,000",AdeM per-image records
+SevOnlyAdeM,14.866666666666667,14.9,AdeM: share of records severe-only (%)
+HighOnlyAdeM,18.55,18.6,AdeM: share of records high-error-only (%)
+BothAdeM,3.1083333333333334,3.1,AdeM: share of records both (%)
+FailAdeM,36.525,36.5,AdeM: mixed-failure prevalence (%)
+HighShareAdeM,59.29728496463609,59.3,AdeM: high-error share of failures (%)
+ErrMeanAdeM,17.03831305453427,17.0,AdeM: mean error rate r (%)
+BestWAdeM,np.float64(0.3),0.3,AdeM: AUROC-maximizing weight on q_c in w*q_c+(1-w)*q_g (descriptive)
+GPolAdeM,0.2074883803988986,+0.207,outputs/E034_modern_ade_panel policy_spearman
+GLoPolAdeM,0.1802250020012672,+0.180,ci_low
+GHiPolAdeM,0.23505540467675679,+0.235,ci_high
+GOpAdeM,0.1253140058776003,+0.125,outputs/E034_modern_ade_panel operational_spearman
+GLoOpAdeM,0.1024835445059255,+0.102,ci_low
+GHiOpAdeM,0.14864768384179766,+0.149,ci_high
+GSevAdeM,0.31784868780299513,+0.318,outputs/E034_modern_ade_panel severe_miss_auroc
+GLoSevAdeM,0.28105908510515076,+0.281,ci_low
+GHiSevAdeM,0.3557902030778707,+0.356,ci_high
+MvbAdeM,0.018095203606160792,+0.018,outputs/E034_modern_ade_panel mixed_vs_best_single_t025 estimate
+MvbLoAdeM,0.0036801228920487375,+0.004,outputs/E034_modern_ade_panel mixed_vs_best_single_t025 ci_low
+MvbHiAdeM,0.03297584893100085,+0.033,outputs/E034_modern_ade_panel mixed_vs_best_single_t025 ci_high
+MvbNameAdeM,'foreground IoU',foreground IoU,outputs/E034_modern_ade_panel mixed_vs_best_single_t025 best_single
+BAdeM,0.1855288829616458,0.186,conflict bound
+BExactAdeM,0.1869366031957719,0.187,exact scalar minimum
+ImagesCity,500,500,City per-image records
+SevOnlyCity,92.10000000000001,92.1,City: share of records severe-only (%)
+HighOnlyCity,0.03333333333333333,0.0,City: share of records high-error-only (%)
+BothCity,0.2,0.2,City: share of records both (%)
+FailCity,92.33333333333333,92.3,City: mixed-failure prevalence (%)
+HighShareCity,0.25270758122743686,0.3,City: high-error share of failures (%)
+ErrMeanCity,6.124937771013715,6.1,City: mean error rate r (%)
+BestWCity,np.float64(1.0),1.0,City: AUROC-maximizing weight on q_c in w*q_c+(1-w)*q_g (descriptive)
+GPolCity,0.06716731516643096,+0.067,E028 Cityscapes-structured-driving policy_spearman
+GLoPolCity,0.02885461809806453,+0.029,ci_low
+GHiPolCity,0.105033195414289,+0.105,ci_high
+GOpCity,0.07090741590037977,+0.071,E028 Cityscapes-structured-driving operational_spearman
+GLoOpCity,0.03464263289940944,+0.035,ci_low
+GHiOpCity,0.1077719867164464,+0.108,ci_high
+GSevCity,0.13772473396886542,+0.138,E032 Cityscapes-structured-driving severe_miss_auroc
+GLoSevCity,0.06693005800221234,+0.067,ci_low
+GHiSevCity,0.21790066258931903,+0.218,ci_high
+MvbCity,-0.1237027154292889,$-$0.124,E032 mixed_vs_best_single_t025/Cityscapes-structured-driving estimate
+MvbLoCity,-0.1967702015669872,$-$0.197,E032 mixed_vs_best_single_t025/Cityscapes-structured-driving ci_low
+MvbHiCity,-0.06253453287649338,$-$0.063,E032 mixed_vs_best_single_t025/Cityscapes-structured-driving ci_high
+MvbNameCity,'severity arithmetic',severity arithmetic,E032 mixed_vs_best_single_t025/Cityscapes-structured-driving best_single
+BCity,0.10627715957901082,0.106,conflict bound
+BExactCity,0.10708095752430233,0.107,exact scalar minimum
+ImagesKitti,200,200,Kitti per-image records
+SevOnlyKitti,80.0,80.0,Kitti: share of records severe-only (%)
+HighOnlyKitti,1.3333333333333335,1.3,Kitti: share of records high-error-only (%)
+BothKitti,4.166666666666666,4.2,Kitti: share of records both (%)
+FailKitti,85.5,85.5,Kitti: mixed-failure prevalence (%)
+HighShareKitti,6.432748538011696,6.4,Kitti: high-error share of failures (%)
+ErrMeanKitti,12.621861954138177,12.6,Kitti: mean error rate r (%)
+BestWKitti,np.float64(1.0),1.0,Kitti: AUROC-maximizing weight on q_c in w*q_c+(1-w)*q_g (descriptive)
+GPolKitti,0.34147090508315536,+0.341,outputs/E035_kitti_panel policy_spearman
+GLoPolKitti,0.19787058003935346,+0.198,ci_low
+GHiPolKitti,0.4809352496012311,+0.481,ci_high
+GOpKitti,0.35510205214590496,+0.355,outputs/E035_kitti_panel operational_spearman
+GLoOpKitti,0.21244280929639786,+0.212,ci_low
+GHiOpKitti,0.4971170169046306,+0.497,ci_high
+GSevKitti,0.174950495049505,+0.175,outputs/E035_kitti_panel severe_miss_auroc
+GLoSevKitti,0.05187547975160162,+0.052,ci_low
+GHiSevKitti,0.302566758668463,+0.303,ci_high
+MvbKitti,-0.20552978871188188,$-$0.206,outputs/E035_kitti_panel mixed_vs_best_single_t025 estimate
+MvbLoKitti,-0.30804001305153067,$-$0.308,outputs/E035_kitti_panel mixed_vs_best_single_t025 ci_low
+MvbHiKitti,-0.0991264015828344,$-$0.099,outputs/E035_kitti_panel mixed_vs_best_single_t025 ci_high
+MvbNameKitti,'severity arithmetic',severity arithmetic,outputs/E035_kitti_panel mixed_vs_best_single_t025 best_single
+BKitti,0.1885598582637307,0.189,conflict bound
+BExactKitti,0.19090103771197164,0.191,exact scalar minimum
+ImagesAmos,100,100,Amos per-image records
+SevOnlyAmos,42.333333333333336,42.3,Amos: share of records severe-only (%)
+HighOnlyAmos,0.16666666666666669,0.2,Amos: share of records high-error-only (%)
+BothAmos,2.3333333333333335,2.3,Amos: share of records both (%)
+FailAmos,44.83333333333333,44.8,Amos: mixed-failure prevalence (%)
+HighShareAmos,5.576208178438662,5.6,Amos: high-error share of failures (%)
+ErrMeanAmos,6.421472345644092,6.4,Amos: mean error rate r (%)
+BestWAmos,np.float64(0.8),0.8,Amos: AUROC-maximizing weight on q_c in w*q_c+(1-w)*q_g (descriptive)
+GPolAmos,0.13036438418229923,+0.130,outputs/E036_amos_panel policy_spearman
+GLoPolAmos,0.09182829893567673,+0.092,ci_low
+GHiPolAmos,0.16964560018417002,+0.170,ci_high
+GOpAmos,0.11243139308556285,+0.112,outputs/E036_amos_panel operational_spearman
+GLoOpAmos,0.08399077790324205,+0.084,ci_low
+GHiOpAmos,0.1419074186558484,+0.142,ci_high
+GSevAmos,0.02474824671821607,+0.025,outputs/E036_amos_panel severe_miss_auroc
+GLoSevAmos,0.01104578132181856,+0.011,ci_low
+GHiSevAmos,0.04040850313952736,+0.040,ci_high
+MvbAmos,-0.01986769842428604,$-$0.020,outputs/E036_amos_panel mixed_vs_best_single_t025 estimate
+MvbLoAmos,-0.03443615646267727,$-$0.034,outputs/E036_amos_panel mixed_vs_best_single_t025 ci_low
+MvbHiAmos,-0.007350927647723675,$-$0.007,outputs/E036_amos_panel mixed_vs_best_single_t025 ci_high
+MvbNameAmos,'CVaR',CVaR,outputs/E036_amos_panel mixed_vs_best_single_t025 best_single
+BAmos,0.11552450229709035,0.116,conflict bound
+BExactAmos,0.11552450229709035,0.116,exact scalar minimum
+RhoShareGap,0.5952380952380953,0.60,"Spearman(high-error share of failures, mixed-minus-best) over 8 panels (descriptive)"
+NPanels,8,8,panels
+MinShareWin,58.4387135318132,58.4,min high-error share among panels where mixed wins
+MaxShareWin,63.17750046563606,63.2,max high-error share among panels where mixed wins
+AmosSevRateMin,11.0,11,E036 per-model severe-miss rate min (%)
+AmosSevRateMax,91.0,91,E036 per-model severe-miss rate max (%)
+AmosSevAucHs,0.9892780075525984,0.989,E036 severe-miss AUROC of h_S
+AmosSevAucHm,0.9645297608343824,0.965,E036 severe-miss AUROC of h_M
+MaxShareLose,6.432748538011696,6.4,max high-error share among panels where mixed loses
+AllGainsPositive,'all',all,endpoint-specific gains positive on all panels and endpoints
+MinGainLow,0.01104578132181856,+0.011,smallest lower CI limit of endpoint-specific gains
+CitySevere,92.30000000000001,92.3,E037 City severe-miss rate (%)
+CityPersonShare,68.97797038642109,69.0,E037 person share of worst critical component (%)
+CityCulpritMedian,553.0,553,E037 median culprit pixels
+CityCulpritBelowK,67.85843264716505,67.9,E037 culprits below 1024 px (%)
+CitySevereIgnoreFourK,34.599999999999994,34.6,E037 severe rate if critical components < 4096 px ignored (%)
+CityImagePixels,2097152,"2,097,152",Cityscapes image pixels
+BAllMin,0.10627715957901082,0.106,min conflict bound over 8 panels
+BAllMax,0.1885598582637307,0.189,max conflict bound over 8 panels
+BGapAllMax,0.002341179448240943,0.0023,max (B_exact - B) over 8 panels
+FamilyN,40,40,8 panels x 5 endpoints
+NontrivialN,24,24,8 panels x 3 non-trivial endpoints
+NontrivialSig,24,24,Holm(40)-significant non-trivial improvements
+NontrivialMaxHolm,0.033593281343731254,0.0336,largest Holm-adjusted p among non-trivial contrasts
+SelFirstWeight,0.4,0.4,E038 selected formula weight on severity arithmetic
+SelSecondWeight,0.6,0.6,E038 selected formula weight on false-positive quality
+SelDevAuroc,0.8357620091724354,0.836,E038 development mixed AUROC
+SelDevRecords,17850,"17,850",E038 development records
+SelDevSevere,15874,"15,874",E038 development severe-miss records
+SelDevHigh,2,2,E038 development high-error records
+SelCity,0.8822225710249568,0.882,E038 Cityscapes-val re-selected AUROC
+FrzCity,0.7683958562235128,0.768,E038 Cityscapes-val frozen mixed AUROC
+SelGainCity,0.11382671480144402,+0.114,E038 Cityscapes-val re-selected minus frozen
+SelGainLoCity,0.06495760786051231,+0.065,ci_low
+SelGainHiCity,0.16915429789746714,+0.169,ci_high
+SelBestCity,-0.009876000627844883,$-$0.010,E038 Cityscapes-val re-selected minus best single
+SelBestLoCity,-0.02824934035819269,$-$0.028,ci_low
+SelBestHiCity,0.005762710592677159,+0.006,ci_high
+SelKitti,0.8070007393963837,0.807,E038 KITTI re-selected AUROC
+FrzKitti,0.6231038963948825,0.623,E038 KITTI frozen mixed AUROC
+SelGainKitti,0.18389684300150122,+0.184,E038 KITTI re-selected minus frozen
+SelGainLoKitti,0.11000779835296927,+0.110,ci_low
+SelGainHiKitti,0.25992990395020316,+0.260,ci_high
+SelBestKitti,-0.021632945710380658,$-$0.022,E038 KITTI re-selected minus best single
+SelBestLoKitti,-0.059687993201045716,$-$0.060,ci_low
+SelBestHiKitti,0.017990700939475666,+0.018,ci_high
+SelAmos,0.9849841080874673,0.985,E038 AMOS-CT re-selected AUROC
+FrzAmos,0.9675310818854659,0.968,E038 AMOS-CT frozen mixed AUROC
+SelGainAmos,0.017453026202001398,+0.017,E038 AMOS-CT re-selected minus frozen
+SelGainLoAmos,0.005906384846197902,+0.006,ci_low
+SelGainHiAmos,0.033526071629185424,+0.034,ci_high
+SelBestAmos,-0.0024146722222846417,$-$0.002,E038 AMOS-CT re-selected minus best single
+SelBestLoAmos,-0.009234232178857972,$-$0.009,ci_low
+SelBestHiAmos,0.005506367058969929,+0.006,ci_high
+SelMaxHolm,0.0005998800239952009,0.0006,E038 largest Holm p (3 panels)
+HumAnnotators,4,4,E039 annotators
+HumPairs,80,80,E039 main pairs retained
+HumExcluded,20,20,E039 main pairs excluded
+HumAgree,61.25000000000001,61.3,E039 h_P agreement with majority (%)
+HumAgreeMixed,38.74999999999999,38.7,E039 h_M agreement with majority (%)
+HumLo,50.0,50.0,E039 95% CI low (%)
+HumHi,71.7948717948718,71.8,E039 95% CI high (%)
+HumP,0.030193961207758448,0.030,E039 one-sided p
+HumKappa,0.5015284705056386,0.50,E039 Fleiss kappa
+HumControl,53.333333333333336,53,E039 control-pair agreement (%)
+HumPolicy,70.2127659574468,70,E039 policy utility agreement (%)
+HumFp,43.15789473684211,43,E039 false-positive quality agreement (%)
+HumIou,56.84210526315789,57,E039 IoU agreement (%)

@@ -1,0 +1,152 @@
+{
+  "checks": {
+    "frozen_heads_verified": true,
+    "six_models": true,
+    "smoke_all_models_ok": true
+  },
+  "claim_boundary": "E036 applies the frozen formulas to five shared abdominal organs on 100 AMOS22 validation CT volumes with six public pretrained CT models and an approved clinically motivated priority map.",
+  "code_commit": {
+    "code_clean": false,
+    "code_paths_dirty": [
+      "?? scripts/run_e037_driving_diagnosis.py"
+    ],
+    "commit": "9dc6e2aeaa6c12d1300073968c30a4b542f5cb82"
+  },
+  "conflict_bound": {
+    "B_exact": 0.11552450229709035,
+    "ci_high": 0.12504824995338315,
+    "ci_low": 0.10598671307586918,
+    "estimate": 0.11552450229709035
+  },
+  "conflict_bound_model_subsets": {
+    "3": {
+      "count": 20,
+      "maximum": 0.18041485769416304,
+      "median": 0.11637350224184112,
+      "minimum": 0.05489260143198091
+    },
+    "4": {
+      "count": 15,
+      "maximum": 0.1452581032412965,
+      "median": 0.11289549376797699,
+      "minimum": 0.08669691903510866
+    },
+    "5": {
+      "count": 6,
+      "maximum": 0.13949145237753197,
+      "median": 0.11258048321372677,
+      "minimum": 0.10083070753365798
+    }
+  },
+  "endpoint_specific_vs_mixed": {
+    "false_positive_auroc": {
+      "ci_high": 0.0022678644107215888,
+      "ci_low": 0.0,
+      "estimable": true,
+      "estimate": 0.0007977207977207801,
+      "holm_p": 0.3111377724455109,
+      "holm_significant_improvement": false,
+      "linearized": {
+        "ci_high": 0.002009788881583769,
+        "ci_low": -0.00023843962305498135,
+        "one_sided_p_unadjusted": 0.07478504299140172
+      },
+      "one_sided_p": 0.15556888622275544,
+      "regression": false,
+      "valid_draws": 5000
+    },
+    "mixed_failure_auroc": {
+      "ci_high": 0.0,
+      "ci_low": 0.0,
+      "estimable": true,
+      "estimate": 0.0,
+      "holm_p": 1.0,
+      "holm_significant_improvement": false,
+      "linearized": {
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "one_sided_p_unadjusted": 1.0
+      },
+      "one_sided_p": 1.0,
+      "regression": false,
+      "valid_draws": 5000
+    },
+    "operational_spearman": {
+      "ci_high": 0.1419074186558484,
+      "ci_low": 0.08399077790324205,
+      "estimable": true,
+      "estimate": 0.11243139308556285,
+      "holm_p": 0.0009998000399920016,
+      "holm_significant_improvement": true,
+      "one_sided_p": 0.0001999600079984003,
+      "regression": false,
+      "valid_draws": 5000
+    },
+    "policy_spearman": {
+      "ci_high": 0.16964560018417002,
+      "ci_low": 0.09182829893567673,
+      "estimable": true,
+      "estimate": 0.13036438418229923,
+      "holm_p": 0.0009998000399920016,
+      "holm_significant_improvement": true,
+      "one_sided_p": 0.0001999600079984003,
+      "regression": false,
+      "valid_draws": 5000
+    },
+    "severe_miss_auroc": {
+      "ci_high": 0.04040850313952736,
+      "ci_low": 0.01104578132181856,
+      "estimable": true,
+      "estimate": 0.02474824671821607,
+      "holm_p": 0.0009998000399920016,
+      "holm_significant_improvement": true,
+      "linearized": {
+        "ci_high": 0.041079964644224205,
+        "ci_low": 0.011118961014636136,
+        "one_sided_p_unadjusted": 0.0001999600079984003
+      },
+      "one_sided_p": 0.0001999600079984003,
+      "regression": false,
+      "valid_draws": 5000
+    }
+  },
+  "frozen_head_definitions_sha256": "836637e1a8b49ab7ae6b2ecd73986875aa0e1eade5d51c760fa52b9e4a738d25",
+  "images_evaluated": 100,
+  "images_excluded_no_component": 0,
+  "label_prevalence": {
+    "critical_images": 100,
+    "high_error": 0.025,
+    "mixed": 0.4483333333333333,
+    "severe_given_critical": 0.44666666666666666
+  },
+  "mixed_vs_best_single_t025": {
+    "best_single": "cvar_quality",
+    "ci_high": -0.007350927647723675,
+    "ci_low": -0.03443615646267727,
+    "estimate": -0.01986769842428604,
+    "linearized": {
+      "ci_high": -0.007446947981354135,
+      "ci_low": -0.035064963125511196,
+      "one_sided_p_unadjusted": 0.9998000399920016
+    },
+    "one_sided_p": 0.9998000399920016,
+    "single_aurocs": {
+      "boundary_iou": 0.803861229348937,
+      "cvar_quality": 0.9873987803097519,
+      "foreground_iou": 0.898561304596862,
+      "fp_quality": 0.6812408045912466,
+      "khizar_v1": 0.9849167218859152,
+      "minimum_component_coverage": 0.9694291265625176,
+      "severity_arithmetic": 0.9833219151158481,
+      "severity_harmonic": 0.9812554049349161
+    },
+    "valid_draws": 5000
+  },
+  "prereg_commit": "827aae00de34be10d181b2cc015c9020ba97f08e",
+  "regressions_first": [
+    "mixed_vs_best_single"
+  ],
+  "replicated_original_claims": true,
+  "stage": "amos_abdominal_ct_frozen_formulas",
+  "status": "PASS"
+}

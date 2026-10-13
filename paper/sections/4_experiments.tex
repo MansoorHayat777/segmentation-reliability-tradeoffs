@@ -1,0 +1,65 @@
+\section{Panels and Protocol}
+
+\begin{table}[t]
+\centering
+\caption{Evaluation panels (six models each). COCO and VOC are used to select
+the frozen score formulas; all other panels are transfer evaluations. The three
+ADE20K panels share the same 2,000 validation images; the two street-scene
+panels share one checkpoint family.}
+\label{tab:panels}
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{llrl}
+\toprule
+Domain & Panel & Images & Models \\
+\midrule
+General & COCO & \NImagesCoco & FCN, DeepLabV3, LR-ASPP \\
+ & VOC & \NImagesVoc & FCN, DeepLabV3, LR-ASPP \\
+ & ADE-S & \NImagesAdeS & SegFormer B0--B5 \\
+ & ADE-X & \NImagesAdeX & UPerNet, BEiT-B, Mask2Former \\
+ & ADE-M & \NImagesAdeM & Mask2Former-L/B, OneFormer-L/T, \\
+ & & & UPerNet ConvNeXt-L, BEiT-L \\
+\midrule
+Street & Cityscapes & \NImagesCity & SegFormer B0--B5 (Cityscapes) \\
+ & KITTI & \NImagesKitti & SegFormer B0--B5 (Cityscapes) \\
+\midrule
+CT & AMOS & \NImagesAmos & TotalSegmentator (2), MONAI \\
+ & & & whole-body (2), Swin-UNETR, DiNTS \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{General scenes.} COCO val2017~\cite{lin2014coco} is evaluated through
+the 20 PASCAL foreground categories; only images with eligible components enter
+complete groups. All 1,449 VOC validation images~\cite{everingham2010pascal}
+and 2,000 ADE20K validation images~\cite{zhou2017scene} are used. COCO and VOC
+use six torchvision models~\cite{long2015fully,chen2017rethinking,
+howard2019searching}. ADE-S contains SegFormer~\cite{xie2021segformer}; ADE-X
+contains UPerNet ConvNeXt and Swin~\cite{xiao2018unified,liu2022convnext,
+liu2021swin}, BEiT-B~\cite{bao2022beit}, and Mask2Former~\cite{cheng2022mask2former};
+ADE-M contains recent Mask2Former, OneFormer~\cite{jain2023oneformer}, UPerNet
+ConvNeXt-L, and BEiT-L checkpoints, fixed before any was evaluated.
+
+\paragraph{Street scenes.} Cityscapes validation~\cite{cordts2016cityscapes} and
+KITTI semantic segmentation~\cite{geiger2013kitti} are evaluated with six
+Cityscapes-trained SegFormer checkpoints. The priority map assigns 5 to
+persons, riders, motorcycles, and bicycles and 4 to cars, trucks, buses, and
+trains. KITTI was not used to train any model.
+
+\paragraph{Abdominal CT.} We evaluate the \NImagesAmos{} labelled validation CT
+volumes of AMOS~\cite{ji2022amos} with six public models:
+TotalSegmentator~\cite{wasserthal2023totalsegmentator} at full and fast
+resolution, MONAI~\cite{cardoso2022monai} whole-body models at high and low
+resolution, Swin-UNETR~\cite{hatamizadeh2022swinunetr} trained on BTCV, and a
+DiNTS multi-organ model, each run with its published pipeline. None is
+documented as trained on AMOS. Scoring uses the five organs all six models
+predict, with a clinically motivated priority map (pancreas 5; gallbladder and
+spleen 4; liver 3; stomach 2), components of at least 1~mL, and a
+three-dimensional port of the scorer that reproduces the two-dimensional one
+exactly.
+
+\paragraph{Protocol.} Class priorities, component eligibility (16 pixels in 2D),
+the high-error threshold, and the frozen formulas are fixed before each panel is
+evaluated. Checkpoint revisions are pinned, and re-running inference for the
+four original general-scene panels and Cityscapes reproduced all stored
+records exactly.

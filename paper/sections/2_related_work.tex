@@ -1,0 +1,71 @@
+\section{Related Work}
+
+\paragraph{Segmentation metrics and problem-aware validation.}
+Mean intersection over union is widely used for semantic segmentation, but it
+compresses class- and pixel-level error structure into one aggregate. Boundary
+IoU is designed to increase sensitivity to contour errors, particularly where
+standard region overlap is insensitive to object-scale boundary deviations
+\cite{cheng2021boundary}. More broadly, validation metrics can produce
+misleading comparisons through implementation, aggregation, ranking, or
+interpretation choices. Metrics Reloaded recommends selecting complementary
+measures from an explicit description of the target problem, and its companion
+analysis organizes recurrent metric-related pitfalls
+\cite{maierhein2024metrics,reinke2024metrics}. We operationalize one such
+concern: different correctly computed criteria can induce incompatible model
+preferences. Our finite-panel bound quantifies that incompatibility for the
+criteria declared here; it does not identify a universally optimal metric set.
+
+\paragraph{Rank aggregation and social choice.}
+Combining several rankings into one is a classical problem. Arrow's
+impossibility theorem rules out aggregation rules that satisfy a few natural
+axioms simultaneously~\cite{arrow1951social}, and the Kemeny--Young rule selects
+the ranking that minimizes total pairwise disagreement with the
+voters~\cite{kemeny1959mathematics,young1978consistent}; computing it is NP-hard
+in general~\cite{bartholdi1989voting} and has been studied for combining search
+engine rankings~\cite{dwork2001rank}. We treat segmentation quality criteria as
+voters over models and use the Kemeny objective not to aggregate them, but to
+measure how much disagreement any single quality score must incur.
+
+\paragraph{Reliability and uncertainty in segmentation.}
+Semantic-segmentation reliability includes distinct tasks such as robustness,
+calibration, misclassification detection, and out-of-distribution detection.
+A broad architecture study found that architectural progress on robustness
+does not imply uniform improvement in uncertainty-based reliability
+\cite{dejorge2023reliability}. ValUES advocates controlled validation across
+uncertainty applications and emphasizes that score aggregation is itself a
+consequential design choice \cite{kahl2024values}. Our scope is narrower: we
+compare fixed per-image quality scores for model ranking and failure
+discrimination. We do not estimate pixelwise predictive calibration, detect
+out-of-distribution inputs, or claim that these tasks are interchangeable.
+
+\paragraph{Safety- and relevance-aware evaluation.}
+Driving-segmentation metrics can account for spatial error structure
+\cite{cheng2021safety}. Relevance-weighted IoU emphasizes corner-case pixels
+\cite{breitenstein2023really}, while Safe mIoU represents class-confusion costs
+through a hierarchy \cite{shaik2024iddaw}. These approaches make task
+priorities explicit. We similarly declare severity weights and operational
+thresholds, but treat them as experimental assumptions rather than validated
+harm models. We report policy agreement, operational agreement, severe misses,
+and false positives separately so that one endpoint cannot stand in for all
+others.
+
+\paragraph{Tail risk, selection, and endpoint choice.}
+Conditional value at risk (CVaR) summarizes the worst part of a loss
+distribution \cite{rockafellar2000optimization}; minimum component coverage
+provides an extreme component-level statistic. Selective-prediction methods
+instead evaluate risk as a function of retained coverage and can provide
+guarantees under their assumptions \cite{geifman2017selective}. We evaluate
+neither abstention nor risk--coverage guarantees. Our question is whether
+failure-detection discrimination and model-ranking agreement can be treated as
+the same endpoint. The results show why that implication must be tested rather
+than assumed: a mixed-failure AUROC gain does not guarantee better policy or
+operational ranking.
+
+\paragraph{Architectural diversity.}
+The evaluated panels include FCN~\cite{long2015fully}, DeepLabV3
+\cite{chen2017rethinking}, MobileNetV3~\cite{howard2019searching},
+SegFormer~\cite{xie2021segformer}, UPerNet~\cite{xiao2018unified}, ConvNeXt
+\cite{liu2022convnext}, Swin~\cite{liu2021swin}, BEiT~\cite{bao2022beit}, and
+Mask2Former~\cite{cheng2022mask2former}. This permits a limited
+cross-architecture analysis, but each panel contains only six evaluated
+checkpoints. It is not a broad sample of the architecture space.

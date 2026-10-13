@@ -1,0 +1,41 @@
+experiment: E029_exact_conflict
+criteria:
+- U_P
+- U_O
+- q_g
+- IoU
+- boundary
+- q_c
+- q_t
+orderings_per_image: 720
+tie_rule_for_score_orderings: 'fixed sorted-model-id order: earlier model ranked above
+  on ties'
+scores:
+- single:q_t
+- single:min_cov
+- single:q_c
+- single:q_a
+- single:q_h
+- single:IoU
+- single:boundary
+- single:q_g
+- frozen:h_P
+- frozen:h_O
+- frozen:h_S
+- frozen:h_G
+- frozen:h_M
+bootstrap:
+  draws: 5000
+  confidence: 0.95
+  unit: image
+  interval: percentile
+seeds:
+  exact_bootstrap:
+    COCO: 2045
+    VOC: 12045
+    ADE-S: 22045
+    ADE-X: 32045
+    City: 42045
+  cityscapes_sensitivity_base: 92045
+cityscapes_sensitivity: E021 suite (configs/conflict_sensitivity.yaml analysis block)
+  with locked E021 routines; model subsets of size 3-5

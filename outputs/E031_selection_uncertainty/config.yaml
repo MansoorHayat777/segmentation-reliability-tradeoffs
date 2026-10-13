@@ -1,0 +1,28 @@
+experiment: E031_selection_uncertainty
+note: Reselection is the experiment; frozen formulas are unchanged and serve as the
+  full-data reference.
+library: 260 formulas (8 singles + 28 pairs x 9 weights), identical to E014
+selection_rule_nested: 'E014 consensus: max over formulas of (min over COCO,VOC; mean
+  over COCO,VOC; formula id)'
+selection_rule_single_dataset: 'E014 transfer: max over formulas of (endpoint value,
+  formula id)'
+nested_bootstrap:
+  draws: 1000
+  unit: image (all six models)
+  interval: percentile
+  confidence: 0.95
+  development_panels: resampled for selection; differences on the same resample are
+    in-sample
+  held_out_panels: independently resampled per draw
+single_dataset_bootstrap:
+  samples: 5000
+  method: locked E028 _clustered_comparison_distributions
+seeds:
+  selection_counts:
+    COCO: 2049
+    VOC: 2050
+  held_out_counts:
+    ADE-S: 2061
+    ADE-X: 2062
+    City: 2063
+  single_dataset: 2044 + 20 * panel_index + endpoint_index + 100000 * (1 + selection_panel_index)

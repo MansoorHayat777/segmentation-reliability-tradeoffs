@@ -1,0 +1,51 @@
+\section{Introduction}
+
+Segmentation metrics summarize different properties of a prediction. Mean
+intersection over union (mIoU) measures region overlap; Boundary IoU emphasizes
+contours; tail statistics emphasize poorly covered components; and
+false-positive scores penalize unsupported predictions. A score that separates
+failed from non-failed images need not rank models in the order a declared
+policy or operational utility would. Treating these uses as interchangeable
+obscures the decision a metric is meant to support, and the problem is sharper
+outside the general-scene benchmarks on which most scores are developed.
+
+We study the issue through pairwise preferences over complete six-model image
+groups (Fig.~\ref{fig:teaser}). For each image and model pair, seven criteria
+may agree, tie, or disagree. The minority count among non-tied preferences
+lower-bounds the disagreement of any single ordering. Across eight panels in
+three domains the bound is \NBAllMin{}--\NBAllMax{}, and an exhaustive search
+over all 720 strict orderings of each image shows it is essentially attained:
+the exact minimum exceeds it by at most \NBGapAllMax{}. In social-choice terms,
+this exact minimum is the Kemeny--Young optimal disagreement of the criteria
+viewed as voters~\cite{kemeny1959mathematics}, a quantitative complement to
+Arrow's impossibility theorem~\cite{arrow1951social}. No scalar score, however
+it is built, can order these models without contradicting this share of the
+declared preferences.
+
+Given an unavoidable conflict, we evaluate a simple protocol: select one score
+formula per endpoint on COCO and VOC, freeze the formulas, and score each
+endpoint with its own formula once the endpoint is declared. Against reuse of a
+single mixed-failure score, this improves rank agreement and severe-miss
+detection on all eight panels, including recent ADE20K architectures, street
+scenes, and CT, none of which was used for selection.
+
+A single failure score behaves differently. Selected on general scenes, the
+mixed score is the best failure detector there, but on street scenes and CT it
+trails a single coverage or tail metric. Those domains have a different failure
+composition: high-error failures are rare and nearly every failure is a severe
+miss, often a small distant pedestrian in street scenes. Re-selecting the
+failure score on Cityscapes training data, whose failures share that
+composition, restores it on three held-out panels, including CT.
+
+Our contributions are:
+(1)~an empirical, essentially exact bound on scalar-ranking disagreement among
+declared segmentation criteria, computed as the Kemeny--Young optimum of the
+criteria viewed as voters, on eight panels in three domains;
+(2)~a cross-domain evaluation of frozen endpoint-specific scoring, which
+improves every non-trivial endpoint on every panel; and
+(3)~evidence that a single failure score transfers only between domains with
+similar failure composition, and that selecting it on data with matching
+composition restores it.
+All results are conditional on the declared criteria, panels, and endpoints;
+they support naming the decision endpoint and its target failure composition
+when reporting segmentation quality, not a new universal metric.

@@ -1,0 +1,44 @@
+panel_config:
+  analysis:
+    bootstrap_samples: 5000
+    confidence: 0.95
+    familywise_alpha: 0.05
+    high_false_positive_threshold: 0.25
+    model_subset_sizes:
+    - 3
+    - 4
+    - 5
+  models:
+  - id: mask2former_swin_large
+    loader: mask2former
+    repository: facebook/mask2former-swin-large-ade-semantic
+    revision: aa25c92404a40599614215e76514c79b427c7527
+  - id: mask2former_swin_base_in21k
+    loader: mask2former
+    repository: facebook/mask2former-swin-base-IN21k-ade-semantic
+    revision: 87cf81022996b309530afc0f778c746d8f7de502
+  - id: oneformer_swin_large
+    loader: oneformer
+    repository: shi-labs/oneformer_ade20k_swin_large
+    revision: 4a5bac8e64f82681a12db2e151a4c2f4ce6092b2
+  - id: oneformer_swin_tiny
+    loader: oneformer
+    repository: shi-labs/oneformer_ade20k_swin_tiny
+    revision: 05f2812b1eccf9909b3897777450f8d68148cafc
+  - id: upernet_convnext_large
+    loader: upernet
+    repository: openmmlab/upernet-convnext-large
+    revision: b029b4fb01ac63f0f9507b9eb60ac716cfb1f568
+  - id: beit_large_ade640
+    loader: beit
+    repository: microsoft/beit-large-finetuned-ade-640-640
+    revision: a38fe98baf3d5a6f69fa1a07a62b698780e5dcb1
+  run:
+    device: cuda
+    mixed_precision: true
+    name: modern_ade20k_panel
+    seed: 2067
+  source_protocol:
+    config: configs/ade20k_confirmation.yaml
+panel_config_commit: ad01507ee12f2b532e7ea3c061ea970107513437
+prereg_commit: 13677a2bc701635d08ea4e94039fabb5a99f1d92

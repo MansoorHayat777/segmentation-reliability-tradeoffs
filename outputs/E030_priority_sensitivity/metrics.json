@@ -1,0 +1,321 @@
+{
+  "checks": {
+    "all_five_panels": true,
+    "frozen_heads_verified": true,
+    "original_map_recomputation_within_1e-9": true,
+    "regenerated_records_reproduce_locked_panels": true
+  },
+  "claim_boundary": "E030 perturbs only the class-priority map; the formulas, tail fractions, thresholds, criteria, images and checkpoints are fixed. Uniform priority keeps the original critical-class set; single-class and permutation variants redefine the critical set as s>=4, so severe-miss endpoints change with the map. Permutations are deliberately implausible stress tests, not alternative policies. Intervals use the paper's E028 bootstrap; differences are within-variant and not multiplicity-adjusted across variants.",
+  "code_commit": {
+    "code_clean": true,
+    "code_paths_dirty": [],
+    "commit": "724911cfcd8185cabe28647fbe50581bdba1a70e"
+  },
+  "code_commit_at_finish": {
+    "code_clean": true,
+    "code_paths_dirty": [],
+    "commit": "724911cfcd8185cabe28647fbe50581bdba1a70e"
+  },
+  "frozen_head_definitions_sha256": "836637e1a8b49ab7ae6b2ecd73986875aa0e1eade5d51c760fa52b9e4a738d25",
+  "original_map_recomputation_max_abs_diff": {
+    "ADE-S": 5.551115123125783e-16,
+    "ADE-X": 6.661338147750939e-16,
+    "COCO": 3.3306690738754696e-16,
+    "City": 9.992007221626409e-16,
+    "VOC": 3.3306690738754696e-16
+  },
+  "original_map_results": {
+    "ADE-S": {
+      "B": 0.16278674382434244,
+      "operational_spearman": {
+        "ci_high": 0.2014090332168832,
+        "ci_low": 0.1489146682903309,
+        "estimate": 0.17533862486128798,
+        "p": 0.0001999600079984003,
+        "valid_images": 855
+      },
+      "policy_spearman": {
+        "ci_high": 0.2901215799585422,
+        "ci_low": 0.22508837939173007,
+        "estimate": 0.2578688389078507,
+        "p": 0.0001999600079984003,
+        "valid_images": 797
+      },
+      "severe_miss_auroc": {
+        "ci_high": 0.4063758618654141,
+        "ci_low": 0.3257887290297978,
+        "critical_images": 710,
+        "estimate": 0.36523798078617564,
+        "p": 0.0001999600079984003,
+        "positives": 2503,
+        "undefined": false
+      }
+    },
+    "ADE-X": {
+      "B": 0.1862848200312989,
+      "operational_spearman": {
+        "ci_high": 0.18890553527931417,
+        "ci_low": 0.13845765817889338,
+        "estimate": 0.1630953672070572,
+        "p": 0.0001999600079984003,
+        "valid_images": 900
+      },
+      "policy_spearman": {
+        "ci_high": 0.2810480055944919,
+        "ci_low": 0.21910735013152519,
+        "estimate": 0.24954271868748093,
+        "p": 0.0001999600079984003,
+        "valid_images": 858
+      },
+      "severe_miss_auroc": {
+        "ci_high": 0.37178737080733926,
+        "ci_low": 0.2938616967831488,
+        "critical_images": 710,
+        "estimate": 0.3330237911210657,
+        "p": 0.0001999600079984003,
+        "positives": 2455,
+        "undefined": false
+      }
+    },
+    "COCO": {
+      "B": 0.15971000441202904,
+      "operational_spearman": {
+        "ci_high": 0.17514804434709563,
+        "ci_low": 0.14669907468070129,
+        "estimate": 0.16111169516680854,
+        "p": 0.0001999600079984003,
+        "valid_images": 3110
+      },
+      "policy_spearman": {
+        "ci_high": 0.6067681092096137,
+        "ci_low": 0.5705719011035535,
+        "estimate": 0.5889300869217476,
+        "p": 0.0001999600079984003,
+        "valid_images": 3065
+      },
+      "severe_miss_auroc": {
+        "ci_high": 0.17005368649559194,
+        "ci_low": 0.14714069979044145,
+        "critical_images": 2687,
+        "estimate": 0.1587267067448921,
+        "p": 0.0001999600079984003,
+        "positives": 5954,
+        "undefined": false
+      }
+    },
+    "City": {
+      "B": 0.10629960815834422,
+      "operational_spearman": {
+        "ci_high": 0.10843406269508137,
+        "ci_low": 0.03348498529871918,
+        "estimate": 0.07090741590037977,
+        "p": 0.0005998800239952009,
+        "valid_images": 141
+      },
+      "policy_spearman": {
+        "ci_high": 0.10902692749726457,
+        "ci_low": 0.02904328625616469,
+        "estimate": 0.06716731516643096,
+        "p": 0.0001999600079984003,
+        "valid_images": 141
+      },
+      "severe_miss_auroc": {
+        "ci_high": 0.21532941611068768,
+        "ci_low": 0.06454362202823599,
+        "critical_images": 493,
+        "estimate": 0.1377247339688653,
+        "p": 0.0001999600079984003,
+        "positives": 2769,
+        "undefined": false
+      }
+    },
+    "VOC": {
+      "B": 0.14222821531396918,
+      "operational_spearman": {
+        "ci_high": 0.13819197033877742,
+        "ci_low": 0.10411778871737787,
+        "estimate": 0.1210036730433823,
+        "p": 0.0001999600079984003,
+        "valid_images": 1207
+      },
+      "policy_spearman": {
+        "ci_high": 0.45372495301320503,
+        "ci_low": 0.4021334604918691,
+        "estimate": 0.42748631188494685,
+        "p": 0.0001999600079984003,
+        "valid_images": 1196
+      },
+      "severe_miss_auroc": {
+        "ci_high": 0.2184934681777188,
+        "ci_low": 0.160630770341586,
+        "critical_images": 512,
+        "estimate": 0.188878152097126,
+        "p": 0.0001999600079984003,
+        "positives": 1213,
+        "undefined": false
+      }
+    }
+  },
+  "stage": "priority_map_sensitivity_frozen_formulas",
+  "status": "PASS",
+  "summary_by_variant_type": {
+    "a_uniform": {
+      "fraction_all_differences_positive": 1.0,
+      "fraction_all_intervals_exclude_zero": 0.0,
+      "minimum_B_any_panel": 0.10403726708074534,
+      "variants": 1,
+      "variants_with_undefined_differences": 0
+    },
+    "b_single_class": {
+      "fraction_all_differences_positive": 1.0,
+      "fraction_all_intervals_exclude_zero": 0.9956896551724138,
+      "minimum_B_any_panel": 0.10363686770673186,
+      "variants": 232,
+      "variants_with_undefined_differences": 0
+    },
+    "c_permutation": {
+      "fraction_all_differences_positive": 0.89,
+      "fraction_all_intervals_exclude_zero": 0.28,
+      "minimum_B_any_panel": 0.10440312323915318,
+      "variants": 100,
+      "variants_with_undefined_differences": 0
+    }
+  },
+  "worst_case_by_panel": {
+    "ADE-S": {
+      "B": {
+        "value": 0.15871090315085462,
+        "variant": "permutation:074"
+      },
+      "operational_spearman": {
+        "ci_high": 0.13446046347886853,
+        "ci_low": 0.0885118081255954,
+        "estimate": 0.11152128148892583,
+        "undefined_variants": 0,
+        "variant": "permutation:049"
+      },
+      "policy_spearman": {
+        "ci_high": 0.08277692508587808,
+        "ci_low": 0.013315647507491249,
+        "estimate": 0.0478008752971908,
+        "undefined_variants": 0,
+        "variant": "uniform"
+      },
+      "severe_miss_auroc": {
+        "ci_high": 0.10129519789554808,
+        "ci_low": 0.019448063817453592,
+        "estimate": 0.06141879888693835,
+        "undefined_variants": 0,
+        "variant": "permutation:067"
+      }
+    },
+    "ADE-X": {
+      "B": {
+        "value": 0.1825213371266003,
+        "variant": "permutation:016"
+      },
+      "operational_spearman": {
+        "ci_high": 0.1528905490128862,
+        "ci_low": 0.10454380284429168,
+        "estimate": 0.12864745934676008,
+        "undefined_variants": 0,
+        "variant": "permutation:049"
+      },
+      "policy_spearman": {
+        "ci_high": 0.10099963551273834,
+        "ci_low": 0.02582257537623074,
+        "estimate": 0.06191409750336812,
+        "undefined_variants": 0,
+        "variant": "uniform"
+      },
+      "severe_miss_auroc": {
+        "ci_high": 0.09013072132355292,
+        "ci_low": 0.011100375452155326,
+        "estimate": 0.051039317171648446,
+        "undefined_variants": 0,
+        "variant": "permutation:067"
+      }
+    },
+    "COCO": {
+      "B": {
+        "value": 0.15733421440273132,
+        "variant": "permutation:094"
+      },
+      "operational_spearman": {
+        "ci_high": 0.16754805977659332,
+        "ci_low": 0.13940999725570766,
+        "estimate": 0.1536218375279995,
+        "undefined_variants": 0,
+        "variant": "permutation:053"
+      },
+      "policy_spearman": {
+        "ci_high": 0.60111453836959,
+        "ci_low": 0.5653294203273815,
+        "estimate": 0.5833290560383174,
+        "undefined_variants": 0,
+        "variant": "permutation:053"
+      },
+      "severe_miss_auroc": {
+        "ci_high": 0.08040747794903469,
+        "ci_low": 0.061038543309651555,
+        "estimate": 0.07073939145830066,
+        "undefined_variants": 0,
+        "variant": "uniform"
+      }
+    },
+    "City": {
+      "B": {
+        "value": 0.10363686770673186,
+        "variant": "single:cityscapes:7:+1"
+      },
+      "operational_spearman": {
+        "ci_high": 0.07673234100160702,
+        "ci_low": -0.009685104166833578,
+        "estimate": 0.03241197589680519,
+        "undefined_variants": 0,
+        "variant": "permutation:037"
+      },
+      "policy_spearman": {
+        "ci_high": 0.06392924764595945,
+        "ci_low": -0.12423519634794895,
+        "estimate": -0.026369919321183103,
+        "undefined_variants": 0,
+        "variant": "permutation:090"
+      },
+      "severe_miss_auroc": {
+        "ci_high": 0.036159507416192345,
+        "ci_low": -0.18993566057859873,
+        "estimate": -0.07184128613608198,
+        "undefined_variants": 0,
+        "variant": "permutation:016"
+      }
+    },
+    "VOC": {
+      "B": {
+        "value": 0.1395231256228384,
+        "variant": "permutation:079"
+      },
+      "operational_spearman": {
+        "ci_high": 0.13388290412302956,
+        "ci_low": 0.10002638728074283,
+        "estimate": 0.11675475176579103,
+        "undefined_variants": 0,
+        "variant": "permutation:063"
+      },
+      "policy_spearman": {
+        "ci_high": 0.4390058422621759,
+        "ci_low": 0.3878136332897346,
+        "estimate": 0.41274875629482355,
+        "undefined_variants": 0,
+        "variant": "permutation:005"
+      },
+      "severe_miss_auroc": {
+        "ci_high": 0.09129751581374534,
+        "ci_low": 0.048033563780940605,
+        "estimate": 0.06920588995091725,
+        "undefined_variants": 0,
+        "variant": "permutation:067"
+      }
+    }
+  }
+}

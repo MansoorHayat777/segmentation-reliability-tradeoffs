@@ -1,0 +1,18 @@
+\section{Conclusion}
+
+Across eight six-model panels in general scenes, street scenes, and abdominal
+CT, seven declared segmentation criteria disagree in a way no scalar score can
+resolve: every ordering of the evaluated models contradicts at least
+\NBAllMin{}--\NBAllMax{} of the non-tied preferences, and exhaustive search shows
+this bound is essentially exact. Scoring each declared endpoint with its own
+frozen formula improved every non-trivial endpoint on every panel, including
+recent architectures and two domains never used for selection. A single
+failure score did not transfer from general scenes to domains whose failures
+are dominated by severe misses, and selecting it on data with matching failure
+composition restored it.
+
+The practical implication is procedural rather than a new default metric.
+Evaluations should name their decision endpoint, state the composition of the
+failures they target, select any failure score on data whose failures resemble
+the target domain, scale component-eligibility rules with image resolution,
+and report criterion conflict rather than hide it inside a single aggregate.

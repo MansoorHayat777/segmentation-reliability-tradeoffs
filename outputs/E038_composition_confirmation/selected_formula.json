@@ -1,0 +1,17 @@
+{
+  "development_composition": {
+    "high_error": 2,
+    "mixed": 15874,
+    "records": 17850,
+    "severe": 15874
+  },
+  "development_mixed_auroc": 0.8357620091724354,
+  "formula": {
+    "first": "severity_arithmetic",
+    "first_weight": 0.4,
+    "id": "pair__severity_arithmetic__fp_quality__w0d40",
+    "kind": "pair",
+    "second": "fp_quality"
+  },
+  "fp_quality_weight": 0.6
+}

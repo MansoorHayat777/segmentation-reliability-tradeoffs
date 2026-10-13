@@ -1,0 +1,36 @@
+experiment: E030_priority_sensitivity
+formulas: frozen E014 heads; no reselection
+inputs: outputs/E030_component_records/<panel>/per_image.jsonl (reproduction_pass
+  required)
+variants:
+  a_uniform: 1
+  b_single_class: 232
+  c_permutation: 100
+critical_set:
+  a_uniform: original classes with s>=4
+  b_single_class: s>=4 under variant
+  c_permutation: s>=4 under variant
+class_universe:
+  voc_classes: VOC foreground ids 1-20 (COCO and VOC panels)
+  ade20k: 0-149
+  cityscapes: 0-18
+bootstrap:
+  draws: 5000
+  unit: image cluster
+  rank: per-image differences
+  auroc: linearized clustered influence (E028 method)
+seeds:
+  rank_counts:
+    COCO: 2051
+    VOC: 2052
+    ADE-S: 2053
+    ADE-X: 2054
+    City: 2055
+  severe_auroc: SEED + 100000 + 1000*panel + variant_index
+  permutations: SEED + 1000 + permutation_index
+panels:
+- COCO
+- VOC
+- ADE-S
+- ADE-X
+- City

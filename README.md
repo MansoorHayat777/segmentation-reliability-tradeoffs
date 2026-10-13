@@ -1,39 +1,35 @@
-# Segmentation reliability evaluation: paper and reproducibility artifacts
+# One Score Cannot Serve Every Decision: paper and reproducibility artifacts
 
-This repository contains the manuscript source, the exact aggregate artifacts
-and configurations used for the reported analyses, and the script that
-regenerates the paper figures. The Overleaf-ready source is in `overleaf.zip`;
-select `main.tex` as the project’s root document after uploading and extracting
-the archive.
+Camera-ready source and PDF of *One Score Cannot Serve Every Decision: Criterion Conflict and Failure
+Composition in Segmentation Quality*, with the aggregate result artifacts behind every number in it.
 
-## Reproduce the figures
+## Contents
 
-Use Python 3 with NumPy and Matplotlib installed, then run from this directory:
+| Path | What it is |
+|---|---|
+| `paper/main_camera_ready.pdf` | The paper |
+| `overleaf.zip` | Overleaf-ready source; upload, extract, and use `main.tex` as the root document |
+| `paper/` | The same source, the figures, and the figure script |
+| `paper/merged_numbers.tex` | Every number in the text, as a LaTeX macro generated from the result artifacts |
+| `reports/merged_ledger.csv` | For every macro: its value and the artifact and field it came from |
+| `outputs/` | `metrics.json` and `config.yaml` for each cited experiment (16 experiments) |
+| `reports/PREREGISTRATION_PHASE2.md` | Dated pre-registration, including the human study protocol |
+| `reports/E0xx_*.md` | Per-experiment outcome reports |
 
-```powershell
+## Regenerate the data figures
+
+With Python 3, NumPy and Matplotlib, from this directory:
+
+```
 python paper/make_figures.py
 ```
 
-The script reads aggregate JSON artifacts from E021, E023, E024, E025, E027,
-and E028 and writes four PDF figures to `paper/figures/`. E026 aggregate
-ranking-stability results are also included for auditing the manuscript.
-Configuration snapshots, aggregate metrics, CSV sensitivity tables, and
-sanitized package-version/GPU provenance are included for independent
-inspection.
+This rewrites `paper/figures/composition_gap.pdf` and `gains_forest.pdf` from `reports/paper2_numbers.json`.
+The teaser and method overview are illustrations. The qualitative figure is rendered from model predictions and
+needs the ADE20K data and checkpoints.
 
-## Scope and data
+## Not included
 
-The release intentionally excludes source datasets, model checkpoints,
-per-image Cityscapes records, and machine-specific logs. Cityscapes must be
-obtained from its rights holder under its terms. The aggregate artifacts allow
-inspection and figure regeneration; rerunning model inference requires the
-datasets, checkpoints, and upstream model-evaluation artifacts specified by
-the experiment configurations.
-
-The named camera-ready source is `paper/main_camera_ready.tex` (also provided
-as `main.tex` at the root of `overleaf.zip`); it identifies the sole author and
-links to this repository. The anonymous review source/PDF is kept outside this
-identity-linked public repository. Update the bundled CVPR style
-files when the official CVPR 2027 author kit becomes available, and verify the
-applicable submission rules before using an identified author version for
-review.
+Datasets (COCO, PASCAL VOC, ADE20K, Cityscapes, KITTI, AMOS), model checkpoints, per-image records, and the images
+shown to human reviewers. Obtain datasets from their rights holders under their licences. Checkpoint repositories and
+pinned revisions are listed in each experiment's `config.yaml`.

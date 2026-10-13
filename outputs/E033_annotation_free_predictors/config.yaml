@@ -1,0 +1,59 @@
+experiment: E033_annotation_free_predictors
+prereg: prereg/PHASE2.md
+prereg_commit: 341897805669b0ac22b6b6eb56ca174f6cdfc050
+features: 34 label-free features (scripts/run_e033_extract.py FEATURES)
+training_free_scores:
+- msp
+- neg_entropy
+- margin
+- neg_boundary_entropy
+- neg_worst_segment_entropy
+model_family: sklearn HistGradientBoosting{Regressor,Classifier}
+grid:
+- - 0.05
+  - 15
+  - 200
+- - 0.05
+  - 15
+  - 500
+- - 0.05
+  - 31
+  - 200
+- - 0.05
+  - 31
+  - 500
+- - 0.1
+  - 15
+  - 200
+- - 0.1
+  - 15
+  - 500
+- - 0.1
+  - 31
+  - 200
+- - 0.1
+  - 31
+  - 500
+fixed_params:
+  l2_regularization: 1.0
+  random_state: 2064
+  early_stopping: false
+holdout:
+  fraction: 0.2
+  seed: 2063
+  unit: image
+endpoint_trained_objectives:
+- policy_spearman
+- operational_spearman
+- severe_miss_auroc
+- false_positive_auroc
+mixed_trained_objective: mixed_failure_auroc
+bootstrap:
+  draws: 5000
+  auroc: exact recomputation per draw (linearized alongside)
+  rank: per-image differences
+seeds:
+  h1: 2065 + 20*panel_index + endpoint_index
+  h2: 2066 + 100*panel_index + pair_index
+note_standardization: trees are invariant to monotone feature scaling, so standardization
+  is a no-op and is not applied

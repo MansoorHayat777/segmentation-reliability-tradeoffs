@@ -1,0 +1,62 @@
+experiment: E032_exact_auroc_bootstrap
+family: 25 endpoint-specific-vs-mixed comparisons (5 panels x 5 endpoints); Holm across
+  all 25
+auroc_members: recomputed exactly per image-cluster draw
+rank_members: unchanged; stored E028 one_sided_p_unadjusted (bit-exact re-execution
+  in Phase 0)
+secondary: mixed (h_M) vs best single at the 0.25 high-error threshold, best single
+  fixed from full data (E027); also vs all 8 singles
+tail_frequency: 'p = (1 + #{delta* <= 0}) / (B_valid + 1); draws lacking a class are
+  undefined and excluded'
+bootstrap:
+  draws: 5000
+  unit: image cluster (all six models)
+  interval: percentile
+  confidence: 0.95
+null_calibration:
+  panel: PASCAL-VOC-2012-val
+  replicates: 200
+  bootstrap_draws_per_replicate: 5000
+  alpha: 0.05
+  nulls:
+  - within-image label permutation (specified)
+  - paired exchange of compared scores (supplementary)
+  comparisons:
+  - severe_miss routed-vs-mixed
+  - false_positive routed-vs-mixed
+  - mixed vs best single (t=0.25)
+seeds:
+  family:
+    COCO:policy_spearman: 2047
+    COCO:operational_spearman: 2048
+    COCO:severe_miss_auroc: 2049
+    COCO:false_positive_auroc: 2050
+    COCO:mixed_failure_auroc: 2051
+    VOC:policy_spearman: 2067
+    VOC:operational_spearman: 2068
+    VOC:severe_miss_auroc: 2069
+    VOC:false_positive_auroc: 2070
+    VOC:mixed_failure_auroc: 2071
+    ADE-S:policy_spearman: 2087
+    ADE-S:operational_spearman: 2088
+    ADE-S:severe_miss_auroc: 2089
+    ADE-S:false_positive_auroc: 2090
+    ADE-S:mixed_failure_auroc: 2091
+    ADE-X:policy_spearman: 2107
+    ADE-X:operational_spearman: 2108
+    ADE-X:severe_miss_auroc: 2109
+    ADE-X:false_positive_auroc: 2110
+    ADE-X:mixed_failure_auroc: 2111
+    City:policy_spearman: 2127
+    City:operational_spearman: 2128
+    City:severe_miss_auroc: 2129
+    City:false_positive_auroc: 2130
+    City:mixed_failure_auroc: 2131
+  best_single:
+    COCO: 2547
+    VOC: 2548
+    ADE-S: 2549
+    ADE-X: 2550
+    City: 2551
+  null_label_permutation: 9047
+  null_paired_exchange: 10047

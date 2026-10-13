@@ -1,0 +1,35 @@
+\section{Limitations}
+
+\paragraph{Shared construction.} Policy utility, severe-miss labels, and the
+component scores are all built from component-coverage measurements. Agreement
+between an endpoint-specific score and its endpoint is therefore partly
+expected; the conflict bound and the cross-domain behaviour of a single failure
+score do not rely on this alignment. The human study (Sec.~\ref{sec:human})
+provides one external check, but with four reviewers, one question, and a
+moderate effect; no downstream decision outcome was evaluated.
+
+\paragraph{Analysis order.} Formulas were selected on COCO and VOC and frozen
+before every transfer evaluation. The failure-composition analysis and the
+domain-matched selection were carried out after the street-scene and CT
+results had been observed. The domain-matched score was selected on Cityscapes
+training data only, but Cityscapes validation shares its source distribution;
+KITTI and CT provide the more independent test.
+
+\paragraph{Panels.} Each panel contains six models, and intervals are
+conditional on them. The three ADE20K panels share images, and the two
+street-scene panels share one Cityscapes-trained checkpoint family, so KITTI
+tests domain shift for that family rather than architecture diversity. The CT
+models differ widely in quality (per-model severe-miss rates
+\NAmosSevRateMin\%--\NAmosSevRateMax\%), and part of one model family's training
+data is not publicly documented.
+
+\paragraph{Endpoint definitions.} Severity maps, including the clinically
+motivated CT map, are declared operationalizations, not validated harm weights.
+The fixed pixel threshold for component eligibility is resolution-dependent and
+can saturate severe-miss labels on high-resolution street imagery; eligibility
+rules should scale with image size.
+
+\paragraph{Use in model selection.} Endpoint-specific scoring requires the user
+to declare the decision objective; a misspecified objective is evaluated
+faithfully but wrongly. Conventional segmentation metrics, calibration, and
+cost should be reported alongside any endpoint-specific score.

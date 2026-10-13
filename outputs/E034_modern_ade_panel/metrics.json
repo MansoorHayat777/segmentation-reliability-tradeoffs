@@ -1,0 +1,138 @@
+{
+  "checks": {
+    "frozen_heads_verified": true,
+    "sanity_repeat_identical": true,
+    "six_models_2000_images": true
+  },
+  "claim_boundary": "E034 applies the frozen formulas, ADE20K priority map and endpoint definitions unchanged to six newer ADE20K checkpoints on the same 2,000 validation images. It is a new model panel, not a new domain; the new-domain arm was deferred for lack of a licensed dataset.",
+  "code_commit": {
+    "code_clean": false,
+    "code_paths_dirty": [
+      "?? scripts/phase2_report.py"
+    ],
+    "commit": "13677a2bc701635d08ea4e94039fabb5a99f1d92"
+  },
+  "conflict_bound": {
+    "ci_high": 0.1886370590739199,
+    "ci_low": 0.18247856268427412,
+    "estimate": 0.1855288829616458
+  },
+  "conflict_bound_model_subsets": {
+    "3": {
+      "count": 20,
+      "maximum": 0.2004552967224873,
+      "median": 0.1846297622574567,
+      "minimum": 0.1676745123577387
+    },
+    "4": {
+      "count": 15,
+      "maximum": 0.19841761372433656,
+      "median": 0.18160077263877605,
+      "minimum": 0.175410139957364
+    },
+    "5": {
+      "count": 6,
+      "maximum": 0.19691656251748774,
+      "median": 0.18385127685694075,
+      "minimum": 0.18139026333833694
+    }
+  },
+  "endpoint_specific_vs_mixed": {
+    "false_positive_auroc": {
+      "ci_high": 0.007306459579774044,
+      "ci_low": 0.004053623699560296,
+      "estimate": 0.00556951220345725,
+      "holm_p": 0.0009998000399920016,
+      "holm_significant_improvement": true,
+      "linearized": {
+        "ci_high": 0.007303443295407361,
+        "ci_low": 0.004039523498146134,
+        "one_sided_p_unadjusted": 0.0001999600079984003
+      },
+      "one_sided_p": 0.0001999600079984003,
+      "regression": false,
+      "valid_draws": 5000
+    },
+    "mixed_failure_auroc": {
+      "ci_high": 0.0,
+      "ci_low": 0.0,
+      "estimate": 0.0,
+      "holm_p": 1.0,
+      "holm_significant_improvement": false,
+      "linearized": {
+        "ci_high": 0.0,
+        "ci_low": 0.0,
+        "one_sided_p_unadjusted": 1.0
+      },
+      "one_sided_p": 1.0,
+      "regression": false,
+      "valid_draws": 5000
+    },
+    "operational_spearman": {
+      "ci_high": 0.14864768384179766,
+      "ci_low": 0.1024835445059255,
+      "estimate": 0.1253140058776003,
+      "holm_p": 0.0009998000399920016,
+      "holm_significant_improvement": true,
+      "one_sided_p": 0.0001999600079984003,
+      "regression": false,
+      "valid_draws": 5000
+    },
+    "policy_spearman": {
+      "ci_high": 0.23505540467675679,
+      "ci_low": 0.1802250020012672,
+      "estimate": 0.2074883803988986,
+      "holm_p": 0.0009998000399920016,
+      "holm_significant_improvement": true,
+      "one_sided_p": 0.0001999600079984003,
+      "regression": false,
+      "valid_draws": 5000
+    },
+    "severe_miss_auroc": {
+      "ci_high": 0.3557902030778707,
+      "ci_low": 0.28105908510515076,
+      "estimate": 0.31784868780299513,
+      "holm_p": 0.0009998000399920016,
+      "holm_significant_improvement": true,
+      "linearized": {
+        "ci_high": 0.3542988509623258,
+        "ci_low": 0.28204622062260754,
+        "one_sided_p_unadjusted": 0.0001999600079984003
+      },
+      "one_sided_p": 0.0001999600079984003,
+      "regression": false,
+      "valid_draws": 5000
+    }
+  },
+  "frozen_head_definitions_sha256": "836637e1a8b49ab7ae6b2ecd73986875aa0e1eade5d51c760fa52b9e4a738d25",
+  "mixed_vs_best_single_t025": {
+    "best_single": "foreground_iou",
+    "ci_high": 0.03297584893100085,
+    "ci_low": 0.0036801228920487375,
+    "estimate": 0.018095203606160792,
+    "linearized": {
+      "ci_high": 0.033501504033269285,
+      "ci_low": 0.00317579216933986,
+      "one_sided_p_unadjusted": 0.01199760047990402
+    },
+    "mixed_auroc": 0.8087353147616327,
+    "one_sided_p": 0.008398320335932814,
+    "single_aurocs": {
+      "boundary_iou": 0.6585242084460439,
+      "cvar_quality": 0.5287368897057751,
+      "foreground_iou": 0.790640111155472,
+      "fp_quality": 0.7751567598097259,
+      "khizar_v1": 0.722312486470472,
+      "minimum_component_coverage": 0.5650753710217047,
+      "severity_arithmetic": 0.7455922306669541,
+      "severity_harmonic": 0.6866571199531435
+    },
+    "valid_draws": 5000
+  },
+  "panel_config_commit": "ad01507ee12f2b532e7ea3c061ea970107513437",
+  "prereg_commit": "13677a2bc701635d08ea4e94039fabb5a99f1d92",
+  "regressions_first": [],
+  "replicated_original_claims": true,
+  "stage": "modern_ade20k_panel_frozen_formulas",
+  "status": "PASS"
+}

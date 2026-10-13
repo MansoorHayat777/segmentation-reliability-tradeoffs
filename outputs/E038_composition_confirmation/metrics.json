@@ -1,0 +1,143 @@
+{
+  "P1_fp_weight_le_half": false,
+  "P2_panels_supported": 3,
+  "checks": {
+    "development_panel_six_models": true,
+    "frozen_heads_verified": true,
+    "library_size_260": true
+  },
+  "claim_boundary": "Selection used Cityscapes train only. Cityscapes val and KITTI were analysed post hoc in E037; this test confirms the selection outcome and its transfer, not blindness to their composition.",
+  "code_commit": {
+    "code_clean": true,
+    "code_paths_dirty": [],
+    "commit": "597a58c6d463413cf2fa0e77c2728b02606097a1"
+  },
+  "decision": "not_supported",
+  "development_composition": {
+    "high_error": 2,
+    "mixed": 15874,
+    "records": 17850,
+    "severe": 15874
+  },
+  "development_top5": {
+    "pair__severity_arithmetic__foreground_iou__w0d70": 0.8355830632832748,
+    "pair__severity_arithmetic__foreground_iou__w0d80": 0.8356514790819811,
+    "pair__severity_arithmetic__fp_quality__w0d40": 0.8357620091724354,
+    "pair__severity_arithmetic__fp_quality__w0d50": 0.835531034120419,
+    "pair__severity_arithmetic__fp_quality__w0d60": 0.8349597016280537
+  },
+  "evaluation": {
+    "AMOS-CT": {
+      "P2_reselected_minus_frozen": {
+        "ci_high": 0.033526071629185424,
+        "ci_low": 0.005906384846197902,
+        "estimate": 0.017453026202001398,
+        "holm_p": 0.0005998800239952009,
+        "holm_significant_improvement": true,
+        "linearized": {
+          "ci_high": 0.033163773152969894,
+          "ci_low": 0.006013401706725099,
+          "one_sided_p_unadjusted": 0.0001999600079984003
+        },
+        "one_sided_p": 0.0001999600079984003,
+        "significant_reversal": false,
+        "valid_draws": 5000
+      },
+      "P3_reselected_minus_best_single": {
+        "ci_high": 0.005506367058969929,
+        "ci_low": -0.009234232178857972,
+        "estimate": -0.0024146722222846417,
+        "linearized": {
+          "ci_high": 0.0053944306662525926,
+          "ci_low": -0.009134937888768397,
+          "one_sided_p_unadjusted": 0.747250549890022
+        },
+        "one_sided_p": 0.7378524295140971,
+        "valid_draws": 5000
+      },
+      "best_single": "cvar_quality",
+      "best_single_auroc": 0.9873987803097519,
+      "frozen_mixed_auroc": 0.9675310818854659,
+      "reselected_auroc": 0.9849841080874673
+    },
+    "Cityscapes-val": {
+      "P2_reselected_minus_frozen": {
+        "ci_high": 0.16915429789746714,
+        "ci_low": 0.06495760786051231,
+        "estimate": 0.11382671480144402,
+        "holm_p": 0.0005998800239952009,
+        "holm_significant_improvement": true,
+        "linearized": {
+          "ci_high": 0.16822954622338251,
+          "ci_low": 0.06497661039672666,
+          "one_sided_p_unadjusted": 0.0001999600079984003
+        },
+        "one_sided_p": 0.0001999600079984003,
+        "significant_reversal": false,
+        "valid_draws": 5000
+      },
+      "P3_reselected_minus_best_single": {
+        "ci_high": 0.005762710592677159,
+        "ci_low": -0.02824934035819269,
+        "estimate": -0.009876000627844883,
+        "linearized": {
+          "ci_high": 0.006174457158909173,
+          "ci_low": -0.027342186790959733,
+          "one_sided_p_unadjusted": 0.8828234353129374
+        },
+        "one_sided_p": 0.875624875024995,
+        "valid_draws": 5000
+      },
+      "best_single": "severity_arithmetic",
+      "best_single_auroc": 0.8920985716528017,
+      "frozen_mixed_auroc": 0.7683958562235128,
+      "reselected_auroc": 0.8822225710249568
+    },
+    "KITTI": {
+      "P2_reselected_minus_frozen": {
+        "ci_high": 0.25992990395020316,
+        "ci_low": 0.11000779835296927,
+        "estimate": 0.18389684300150122,
+        "holm_p": 0.0005998800239952009,
+        "holm_significant_improvement": true,
+        "linearized": {
+          "ci_high": 0.2581699594592804,
+          "ci_low": 0.10816769669656454,
+          "one_sided_p_unadjusted": 0.0001999600079984003
+        },
+        "one_sided_p": 0.0001999600079984003,
+        "significant_reversal": false,
+        "valid_draws": 5000
+      },
+      "P3_reselected_minus_best_single": {
+        "ci_high": 0.017990700939475666,
+        "ci_low": -0.059687993201045716,
+        "estimate": -0.021632945710380658,
+        "linearized": {
+          "ci_high": 0.01812701903850847,
+          "ci_low": -0.0595895817163023,
+          "one_sided_p_unadjusted": 0.8650269946010798
+        },
+        "one_sided_p": 0.8674265146970606,
+        "valid_draws": 5000
+      },
+      "best_single": "severity_arithmetic",
+      "best_single_auroc": 0.8286336851067644,
+      "frozen_mixed_auroc": 0.6231038963948825,
+      "reselected_auroc": 0.8070007393963837
+    }
+  },
+  "frozen_head_definitions_sha256": "836637e1a8b49ab7ae6b2ecd73986875aa0e1eade5d51c760fa52b9e4a738d25",
+  "prereg_commit": "af77b34b4ce9eee085de689432769f628dee3caf",
+  "regressions_first": [],
+  "selected_formula": {
+    "first": "severity_arithmetic",
+    "first_weight": 0.4,
+    "id": "pair__severity_arithmetic__fp_quality__w0d40",
+    "kind": "pair",
+    "second": "fp_quality"
+  },
+  "selected_fp_quality_weight": 0.6,
+  "stage": "failure_composition_confirmation",
+  "status": "PASS"
+}

@@ -1,0 +1,22 @@
+\begin{abstract}
+Segmentation quality scores serve different decisions, such as ranking models
+and flagging failed predictions, yet are usually reported as if one number
+served them all. We test this on eight six-model panels in three domains:
+general scenes (COCO, PASCAL VOC, and three ADE20K panels including recent
+architectures), street scenes (Cityscapes, KITTI), and abdominal CT (AMOS). For
+seven declared criteria, every scalar ordering of the models must contradict
+\NBAllMin{}--\NBAllMax{} of the non-tied criterion preferences, and exhaustive
+search over all 720 orderings shows this bound is essentially exact. Scoring
+each declared endpoint with its own frozen formula instead of one mixed score
+improves policy-rank agreement, operational-rank agreement, and severe-miss
+AUROC on all eight panels; all \NNontrivialSig{} contrasts are significant after
+Holm correction over \NFamilyN{} tests. A single failure score is more fragile.
+Selected on general scenes, it beats the strongest single metric there, but not
+on street scenes and CT, where high-error failures make up at most
+\NMaxShareLose\% of failures and severe misses dominate. Re-selecting it on
+Cityscapes training data brings it level with the strongest single metric on
+three held-out panels, including CT (gains of \NSelGainCity, \NSelGainKitti, and
+\NSelGainAmos{} AUROC over the general-scene selection). Quality
+evaluation should therefore name its endpoint and match its failure score to
+the failure composition of the target domain.
+\end{abstract}

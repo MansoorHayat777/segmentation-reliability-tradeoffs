@@ -1,0 +1,842 @@
+{
+  "H_human": {
+    "ci_high": 0.717948717948718,
+    "ci_low": 0.5,
+    "decision": "supported",
+    "hM_agreement_with_majority": 0.38749999999999996,
+    "hP_agreement_with_majority": 0.6125,
+    "one_sided_p": 0.030193961207758448
+  },
+  "annotators": 4,
+  "checks": {
+    "min_three_annotators": true
+  },
+  "claim_boundary": "Human majority preference on people/vehicle coverage for ADE-X pairs where the endpoint-specific policy score and the mixed score disagree. Conditional on these annotators, pairs and wording.",
+  "control_hP_hM_agreement_with_majority": 0.5333333333333333,
+  "control_pairs_retained": 15,
+  "fleiss_kappa": 0.5015284705056386,
+  "main_pairs_excluded_no_majority_or_cant_tell": 20,
+  "main_pairs_retained": 80,
+  "per_item": {
+    "c100": {
+      "majority": "A",
+      "votes": {
+        "A": 3,
+        "B": 1
+      }
+    },
+    "c101": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "c102": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "c103": {
+      "majority": "A",
+      "votes": {
+        "A": 3,
+        "cant_tell": 1
+      }
+    },
+    "c104": {
+      "majority": "A",
+      "votes": {
+        "A": 3,
+        "B": 1
+      }
+    },
+    "c105": {
+      "majority": null,
+      "votes": {
+        "B": 2,
+        "cant_tell": 2
+      }
+    },
+    "c106": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "c107": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "c108": {
+      "majority": "cant_tell",
+      "votes": {
+        "B": 1,
+        "cant_tell": 3
+      }
+    },
+    "c109": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "c110": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "c111": {
+      "majority": "B",
+      "votes": {
+        "A": 1,
+        "B": 3
+      }
+    },
+    "c112": {
+      "majority": null,
+      "votes": {
+        "A": 2,
+        "B": 2
+      }
+    },
+    "c113": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "c114": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "c115": {
+      "majority": "A",
+      "votes": {
+        "A": 3,
+        "B": 1
+      }
+    },
+    "c116": {
+      "majority": "cant_tell",
+      "votes": {
+        "cant_tell": 4
+      }
+    },
+    "c117": {
+      "majority": null,
+      "votes": {
+        "A": 2,
+        "B": 2
+      }
+    },
+    "c118": {
+      "majority": "A",
+      "votes": {
+        "A": 3,
+        "B": 1
+      }
+    },
+    "c119": {
+      "majority": "B",
+      "votes": {
+        "A": 1,
+        "B": 2,
+        "cant_tell": 1
+      }
+    },
+    "m000": {
+      "majority": "cant_tell",
+      "votes": {
+        "A": 1,
+        "cant_tell": 3
+      }
+    },
+    "m001": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "m002": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "m003": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m004": {
+      "majority": "cant_tell",
+      "votes": {
+        "cant_tell": 4
+      }
+    },
+    "m005": {
+      "majority": "A",
+      "votes": {
+        "A": 3,
+        "cant_tell": 1
+      }
+    },
+    "m006": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m007": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m008": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m009": {
+      "majority": "B",
+      "votes": {
+        "A": 1,
+        "B": 3
+      }
+    },
+    "m010": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m011": {
+      "majority": "B",
+      "votes": {
+        "A": 1,
+        "B": 2,
+        "cant_tell": 1
+      }
+    },
+    "m012": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m013": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m014": {
+      "majority": "cant_tell",
+      "votes": {
+        "cant_tell": 4
+      }
+    },
+    "m015": {
+      "majority": "A",
+      "votes": {
+        "A": 3,
+        "cant_tell": 1
+      }
+    },
+    "m016": {
+      "majority": "cant_tell",
+      "votes": {
+        "B": 1,
+        "cant_tell": 3
+      }
+    },
+    "m017": {
+      "majority": "A",
+      "votes": {
+        "A": 3,
+        "B": 1
+      }
+    },
+    "m018": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m019": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m020": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m021": {
+      "majority": null,
+      "votes": {
+        "A": 2,
+        "B": 2
+      }
+    },
+    "m022": {
+      "majority": null,
+      "votes": {
+        "A": 2,
+        "B": 2
+      }
+    },
+    "m023": {
+      "majority": "cant_tell",
+      "votes": {
+        "cant_tell": 4
+      }
+    },
+    "m024": {
+      "majority": "A",
+      "votes": {
+        "A": 3,
+        "B": 1
+      }
+    },
+    "m025": {
+      "majority": null,
+      "votes": {
+        "A": 2,
+        "B": 2
+      }
+    },
+    "m026": {
+      "majority": "A",
+      "votes": {
+        "A": 3,
+        "B": 1
+      }
+    },
+    "m027": {
+      "majority": "A",
+      "votes": {
+        "A": 3,
+        "B": 1
+      }
+    },
+    "m028": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m029": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "m030": {
+      "majority": "A",
+      "votes": {
+        "A": 3,
+        "B": 1
+      }
+    },
+    "m031": {
+      "majority": "A",
+      "votes": {
+        "A": 3,
+        "B": 1
+      }
+    },
+    "m032": {
+      "majority": "B",
+      "votes": {
+        "B": 3,
+        "cant_tell": 1
+      }
+    },
+    "m033": {
+      "majority": "cant_tell",
+      "votes": {
+        "A": 1,
+        "cant_tell": 3
+      }
+    },
+    "m034": {
+      "majority": null,
+      "votes": {
+        "A": 2,
+        "B": 2
+      }
+    },
+    "m035": {
+      "majority": "B",
+      "votes": {
+        "A": 1,
+        "B": 2,
+        "cant_tell": 1
+      }
+    },
+    "m036": {
+      "majority": "B",
+      "votes": {
+        "A": 1,
+        "B": 3
+      }
+    },
+    "m037": {
+      "majority": "B",
+      "votes": {
+        "A": 1,
+        "B": 3
+      }
+    },
+    "m038": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "m039": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m040": {
+      "majority": "A",
+      "votes": {
+        "A": 3,
+        "B": 1
+      }
+    },
+    "m041": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m042": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m043": {
+      "majority": "A",
+      "votes": {
+        "A": 3,
+        "B": 1
+      }
+    },
+    "m044": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "m045": {
+      "majority": null,
+      "votes": {
+        "A": 2,
+        "B": 2
+      }
+    },
+    "m046": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m047": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m048": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "m049": {
+      "majority": "A",
+      "votes": {
+        "A": 3,
+        "B": 1
+      }
+    },
+    "m050": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "m051": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m052": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "m053": {
+      "majority": "B",
+      "votes": {
+        "A": 1,
+        "B": 3
+      }
+    },
+    "m054": {
+      "majority": "A",
+      "votes": {
+        "A": 3,
+        "cant_tell": 1
+      }
+    },
+    "m055": {
+      "majority": null,
+      "votes": {
+        "A": 2,
+        "cant_tell": 2
+      }
+    },
+    "m056": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "m057": {
+      "majority": "B",
+      "votes": {
+        "A": 1,
+        "B": 3
+      }
+    },
+    "m058": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m059": {
+      "majority": "B",
+      "votes": {
+        "A": 1,
+        "B": 3
+      }
+    },
+    "m060": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "m061": {
+      "majority": "B",
+      "votes": {
+        "B": 3,
+        "cant_tell": 1
+      }
+    },
+    "m062": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "m063": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "m064": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m065": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m066": {
+      "majority": "A",
+      "votes": {
+        "A": 2,
+        "B": 1,
+        "cant_tell": 1
+      }
+    },
+    "m067": {
+      "majority": "B",
+      "votes": {
+        "A": 1,
+        "B": 3
+      }
+    },
+    "m068": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m069": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "m070": {
+      "majority": "A",
+      "votes": {
+        "A": 3,
+        "B": 1
+      }
+    },
+    "m071": {
+      "majority": null,
+      "votes": {
+        "A": 2,
+        "B": 2
+      }
+    },
+    "m072": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "m073": {
+      "majority": "cant_tell",
+      "votes": {
+        "B": 1,
+        "cant_tell": 3
+      }
+    },
+    "m074": {
+      "majority": "B",
+      "votes": {
+        "A": 1,
+        "B": 3
+      }
+    },
+    "m075": {
+      "majority": null,
+      "votes": {
+        "A": 2,
+        "B": 2
+      }
+    },
+    "m076": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m077": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "m078": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "m079": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m080": {
+      "majority": "A",
+      "votes": {
+        "A": 2,
+        "B": 1,
+        "cant_tell": 1
+      }
+    },
+    "m081": {
+      "majority": "A",
+      "votes": {
+        "A": 3,
+        "cant_tell": 1
+      }
+    },
+    "m082": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "m083": {
+      "majority": "A",
+      "votes": {
+        "A": 3,
+        "B": 1
+      }
+    },
+    "m084": {
+      "majority": "cant_tell",
+      "votes": {
+        "A": 1,
+        "cant_tell": 3
+      }
+    },
+    "m085": {
+      "majority": "B",
+      "votes": {
+        "A": 1,
+        "B": 3
+      }
+    },
+    "m086": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m087": {
+      "majority": null,
+      "votes": {
+        "A": 2,
+        "B": 2
+      }
+    },
+    "m088": {
+      "majority": "A",
+      "votes": {
+        "A": 3,
+        "B": 1
+      }
+    },
+    "m089": {
+      "majority": "A",
+      "votes": {
+        "A": 4
+      }
+    },
+    "m090": {
+      "majority": "cant_tell",
+      "votes": {
+        "B": 1,
+        "cant_tell": 3
+      }
+    },
+    "m091": {
+      "majority": null,
+      "votes": {
+        "A": 2,
+        "B": 2
+      }
+    },
+    "m092": {
+      "majority": null,
+      "votes": {
+        "A": 2,
+        "B": 2
+      }
+    },
+    "m093": {
+      "majority": "A",
+      "votes": {
+        "A": 3,
+        "cant_tell": 1
+      }
+    },
+    "m094": {
+      "majority": "B",
+      "votes": {
+        "A": 1,
+        "B": 3
+      }
+    },
+    "m095": {
+      "majority": "B",
+      "votes": {
+        "A": 1,
+        "B": 3
+      }
+    },
+    "m096": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m097": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    },
+    "m098": {
+      "majority": "B",
+      "votes": {
+        "A": 1,
+        "B": 3
+      }
+    },
+    "m099": {
+      "majority": "B",
+      "votes": {
+        "B": 4
+      }
+    }
+  },
+  "secondary_criterion_agreement": {
+    "IoU": {
+      "agreement": 0.5684210526315789,
+      "pairs": 95
+    },
+    "U_O": {
+      "agreement": 0.62,
+      "pairs": 50
+    },
+    "U_P": {
+      "agreement": 0.7021276595744681,
+      "pairs": 47
+    },
+    "boundary": {
+      "agreement": 0.6210526315789474,
+      "pairs": 95
+    },
+    "q_c": {
+      "agreement": 0.6105263157894737,
+      "pairs": 95
+    },
+    "q_g": {
+      "agreement": 0.43157894736842106,
+      "pairs": 95
+    },
+    "q_t": {
+      "agreement": 0.6,
+      "pairs": 95
+    }
+  },
+  "stage": "human_preference_study",
+  "status": "PASS"
+}
